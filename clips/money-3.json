@@ -1,0 +1,108 @@
+{
+  "id": "money-3",
+  "title": "Tails drive everything",
+  "beats": [
+    {
+      "primitive": "title",
+      "dur": 5,
+      "say": "Why can you be wrong most of the time and still come out ahead?",
+      "data": {
+        "kicker": "The Psychology of Money · Morgan Housel",
+        "lines": [
+          "Tails drive",
+          "everything"
+        ]
+      }
+    },
+    {
+      "primitive": "grid",
+      "dur": 11,
+      "say": "Picture ten bets. Six go nowhere, three do fine, and one does extraordinarily well. That single bet drives almost the entire result.",
+      "data": {
+        "title": "Ten bets",
+        "total": 10,
+        "cols": 5,
+        "filled": 3,
+        "fillTone": "rev",
+        "highlight": [
+          9
+        ],
+        "note": "Illustrative split",
+        "legend": [
+          {
+            "tone": "empty",
+            "label": "Went nowhere"
+          },
+          {
+            "tone": "rev",
+            "label": "Did fine"
+          },
+          {
+            "tone": "mem",
+            "label": "Carried the result"
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "split",
+      "dur": 10,
+      "say": "So your hit rate matters less than staying in the game long enough to catch the rare winner.",
+      "data": {
+        "title": "Two ways to play",
+        "left": {
+          "label": "Chase hit rate",
+          "rows": [
+            "Avoid every loss",
+            "Few, big bets",
+            "One wipeout ends it"
+          ],
+          "tone": "dim"
+        },
+        "right": {
+          "label": "Stay in the game",
+          "rows": [
+            "Expect most to fail",
+            "Many small bets",
+            "Survive to catch a tail"
+          ],
+          "tone": "rev"
+        }
+      }
+    },
+    {
+      "primitive": "flow",
+      "dur": 9,
+      "say": "Make many reasonable bets, keep losses survivable, and let the few big winners do the heavy lifting.",
+      "data": {
+        "steps": [
+          {
+            "t": "Make many bets",
+            "s": "Each one reasonable"
+          },
+          {
+            "t": "Cap the downside",
+            "s": "Losses stay survivable"
+          },
+          {
+            "t": "Stay in the game",
+            "s": "Avoid ruin"
+          },
+          {
+            "t": "Let a tail carry you",
+            "s": "Rare wins compound"
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "recall",
+      "dur": 6,
+      "say": "Why can you be wrong most of the time and still come out ahead?",
+      "data": {
+        "question": "Why can you be wrong most of the time and still come out ahead?",
+        "answer": "A few big winners drive most of the result, as long as you stay in the game."
+      }
+    }
+  ]
+}

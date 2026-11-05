@@ -1,0 +1,145 @@
+{
+  "id": "chip-3",
+  "title": "Chokepoints",
+  "beats": [
+    {
+      "primitive": "title",
+      "dur": 5,
+      "say": "Why can a single company hold up the whole chip industry?",
+      "data": {
+        "kicker": "Chip War · Chris Miller",
+        "lines": [
+          "Chokepoints"
+        ]
+      }
+    },
+    {
+      "primitive": "network",
+      "dur": 14,
+      "say": "Follow the supply chain. Designers like Apple and Nvidia depend on a few leading-edge fabs. Those fabs depend on one Dutch company, ASML, the only maker of EUV lithography machines.",
+      "data": {
+        "title": "Leading-edge supply chain",
+        "note": "Simplified",
+        "nodes": [
+          {
+            "id": "asml",
+            "label": "ASML",
+            "layer": 0
+          },
+          {
+            "id": "tsmc",
+            "label": "TSMC",
+            "layer": 1
+          },
+          {
+            "id": "samsung",
+            "label": "Samsung",
+            "layer": 1
+          },
+          {
+            "id": "apple",
+            "label": "Apple",
+            "layer": 2
+          },
+          {
+            "id": "nvidia",
+            "label": "Nvidia",
+            "layer": 2
+          },
+          {
+            "id": "amd",
+            "label": "AMD",
+            "layer": 2
+          },
+          {
+            "id": "phones",
+            "label": "Phones",
+            "layer": 3
+          },
+          {
+            "id": "dc",
+            "label": "Data centers",
+            "layer": 3
+          }
+        ],
+        "links": [
+          [
+            "asml",
+            "tsmc"
+          ],
+          [
+            "asml",
+            "samsung"
+          ],
+          [
+            "tsmc",
+            "apple"
+          ],
+          [
+            "tsmc",
+            "nvidia"
+          ],
+          [
+            "tsmc",
+            "amd"
+          ],
+          [
+            "samsung",
+            "nvidia"
+          ],
+          [
+            "apple",
+            "phones"
+          ],
+          [
+            "nvidia",
+            "dc"
+          ],
+          [
+            "amd",
+            "dc"
+          ]
+        ],
+        "choke": [
+          "asml",
+          "tsmc"
+        ]
+      }
+    },
+    {
+      "primitive": "split",
+      "dur": 11,
+      "say": "Chokepoints are what make the industry so efficient. They're also why it's fragile, and why governments now treat them as leverage.",
+      "data": {
+        "title": "Two sides of a chokepoint",
+        "left": {
+          "label": "Efficiency",
+          "rows": [
+            "Specialists get great",
+            "Costs fall",
+            "Scale compounds"
+          ],
+          "tone": "dim"
+        },
+        "right": {
+          "label": "Fragility",
+          "rows": [
+            "One outage ripples",
+            "One place to pressure",
+            "Hard to replace"
+          ],
+          "tone": "rev"
+        }
+      }
+    },
+    {
+      "primitive": "recall",
+      "dur": 6,
+      "say": "Which company is the only maker of EUV lithography machines?",
+      "data": {
+        "question": "Which company is the only maker of EUV lithography machines?",
+        "answer": "ASML, a Dutch company."
+      }
+    }
+  ]
+}

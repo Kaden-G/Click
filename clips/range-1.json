@@ -1,0 +1,67 @@
+{
+  "id": "range-1",
+  "title": "Kind vs wicked worlds",
+  "beats": [
+    {
+      "primitive": "title",
+      "dur": 5,
+      "say": "When does specializing early pay off, and when does it backfire?",
+      "data": {
+        "kicker": "Range · David Epstein",
+        "lines": [
+          "Kind vs",
+          "wicked worlds"
+        ]
+      }
+    },
+    {
+      "primitive": "split",
+      "dur": 15,
+      "say": "In kind worlds like chess or golf, rules stay stable and feedback is fast and accurate, so early specialization works. Most real work is wicked. Rules shift and feedback misleads, so breadth tends to win.",
+      "data": {
+        "title": "Two learning worlds",
+        "left": {
+          "label": "Kind",
+          "rows": [
+            "Chess, golf",
+            "Stable rules",
+            "Fast, accurate feedback",
+            "Specialize early"
+          ],
+          "tone": "dim"
+        },
+        "right": {
+          "label": "Wicked",
+          "rows": [
+            "Most careers",
+            "Shifting rules",
+            "Late or misleading feedback",
+            "Build range"
+          ],
+          "tone": "rev"
+        }
+      }
+    },
+    {
+      "primitive": "title",
+      "dur": 6,
+      "say": "So ask which kind of world you're in before deciding how narrow to go.",
+      "data": {
+        "kicker": "Terms: Robin Hogarth",
+        "lines": [
+          "Which world",
+          "are you in?"
+        ]
+      }
+    },
+    {
+      "primitive": "recall",
+      "dur": 6,
+      "say": "What makes a learning environment wicked?",
+      "data": {
+        "question": "What makes a learning environment wicked?",
+        "answer": "Shifting rules and feedback that arrives late or misleads."
+      }
+    }
+  ]
+}

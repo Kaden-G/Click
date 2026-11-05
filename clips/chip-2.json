@@ -1,0 +1,64 @@
+{
+  "id": "chip-2",
+  "title": "The foundry model",
+  "beats": [
+    {
+      "primitive": "title",
+      "dur": 6,
+      "say": "How can Apple and Nvidia build world-class chips without owning a factory?",
+      "data": {
+        "kicker": "Chip War · Chris Miller",
+        "lines": [
+          "The foundry",
+          "model"
+        ]
+      }
+    },
+    {
+      "primitive": "flow",
+      "dur": 11,
+      "say": "In 1987, Morris Chang founded TSMC to manufacture chips other companies design. Designers focus on design; the foundry focuses on making them.",
+      "data": {
+        "steps": [
+          {
+            "t": "Designer",
+            "s": "Apple, Nvidia, AMD"
+          },
+          {
+            "t": "Foundry",
+            "s": "TSMC builds to spec"
+          },
+          {
+            "t": "Key tools",
+            "s": "ASML lithography"
+          },
+          {
+            "t": "Chips ship",
+            "s": "Phones, servers, cars"
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "title",
+      "dur": 10,
+      "say": "That split made the industry remarkably efficient. It also concentrated the most advanced manufacturing in very few places, mostly Taiwan.",
+      "data": {
+        "kicker": "The catch",
+        "lines": [
+          "Efficient, and",
+          "concentrated"
+        ]
+      }
+    },
+    {
+      "primitive": "recall",
+      "dur": 6,
+      "say": "What does a foundry do in the chip business?",
+      "data": {
+        "question": "What does a foundry do in the chip business?",
+        "answer": "It manufactures chips that other companies design."
+      }
+    }
+  ]
+}

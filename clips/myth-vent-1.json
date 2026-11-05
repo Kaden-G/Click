@@ -1,0 +1,79 @@
+{
+  "id": "myth-vent-1",
+  "title": "Venting",
+  "strength": "Strong",
+  "beats": [
+    {
+      "primitive": "title",
+      "dur": 5,
+      "say": "Does blowing off steam actually calm you down?",
+      "data": {
+        "kicker": "Myth vs evidence",
+        "lines": [
+          "Does venting",
+          "help?"
+        ]
+      }
+    },
+    {
+      "primitive": "split",
+      "dur": 12,
+      "say": "Venting keeps your body revved up, so the anger lingers. Calming activities lower arousal, and the anger fades with it. That's what a 2024 meta-analysis found.",
+      "data": {
+        "title": "Two ways to handle anger",
+        "left": {
+          "label": "Venting",
+          "rows": [
+            "Rant or punch",
+            "Arousal stays high",
+            "Anger lingers"
+          ],
+          "tone": "dim"
+        },
+        "right": {
+          "label": "Calming",
+          "rows": [
+            "Slow breathing",
+            "Arousal drops",
+            "Anger fades"
+          ],
+          "tone": "rev"
+        }
+      }
+    },
+    {
+      "primitive": "flow",
+      "dur": 10,
+      "say": "So the toolkit is simple. Pause, breathe slowly, relax your body, and only then respond.",
+      "data": {
+        "steps": [
+          {
+            "t": "Pause",
+            "s": "Don't reply yet"
+          },
+          {
+            "t": "Breathe slowly",
+            "s": "Longer out than in"
+          },
+          {
+            "t": "Relax your body",
+            "s": "Shoulders, jaw, hands"
+          },
+          {
+            "t": "Then respond",
+            "s": "Once you've cooled"
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "recall",
+      "dur": 6,
+      "say": "What actually reduces anger?",
+      "data": {
+        "question": "What actually reduces anger?",
+        "answer": "Lowering arousal: slow breathing, relaxation, or simply waiting it out."
+      }
+    }
+  ]
+}

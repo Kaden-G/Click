@@ -1,0 +1,83 @@
+{
+  "id": "myth-money-1",
+  "title": "Money and happiness",
+  "strength": "Strong",
+  "beats": [
+    {
+      "primitive": "title",
+      "dur": 5,
+      "say": "Does more money stop making you happier past seventy-five thousand dollars a year?",
+      "data": {
+        "kicker": "Myth vs evidence",
+        "lines": [
+          "Does happiness",
+          "plateau at $75k?"
+        ]
+      }
+    },
+    {
+      "primitive": "growth",
+      "dur": 13,
+      "say": "For most people, well-being keeps rising as income grows, with smaller gains per extra dollar. Only the least happy group levels off. That's from a 2023 study by former rivals who teamed up.",
+      "data": {
+        "title": "Well-being as income rises",
+        "points": 100,
+        "xLabel": "Income, log scale",
+        "hideY": true,
+        "note": "Schematic shape",
+        "series": [
+          {
+            "label": "Most people",
+            "fn": "linear",
+            "rate": 0.03,
+            "tone": "rev"
+          },
+          {
+            "label": "Least happy group",
+            "fn": "logistic",
+            "K": 1.2,
+            "mid": 30,
+            "rate": 0.12,
+            "tone": "mem",
+            "dash": true
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "split",
+      "dur": 10,
+      "say": "So the old headline was too simple. Money keeps helping most people, just with diminishing returns.",
+      "data": {
+        "title": "Old headline vs new finding",
+        "left": {
+          "label": "Old headline",
+          "rows": [
+            "Plateau at $75k",
+            "For everyone",
+            "Money stops helping"
+          ],
+          "tone": "dim"
+        },
+        "right": {
+          "label": "2023 finding",
+          "rows": [
+            "Keeps rising",
+            "For most people",
+            "Smaller gains per dollar"
+          ],
+          "tone": "rev"
+        }
+      }
+    },
+    {
+      "primitive": "recall",
+      "dur": 6,
+      "say": "Who hits the happiness plateau?",
+      "data": {
+        "question": "Who hits the happiness plateau?",
+        "answer": "Mainly the least happy group. For most people, well-being keeps rising with income."
+      }
+    }
+  ]
+}

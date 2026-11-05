@@ -1,0 +1,78 @@
+{
+  "id": "goggins-5",
+  "title": "After-action reports",
+  "beats": [
+    {
+      "primitive": "title",
+      "dur": 6,
+      "say": "What do you do with a failure? Goggins treats it like a military debrief.",
+      "data": {
+        "kicker": "Can't Hurt Me · David Goggins",
+        "lines": [
+          "After-action",
+          "reports"
+        ]
+      }
+    },
+    {
+      "primitive": "flow",
+      "dur": 10,
+      "say": "Write down what went right, what went wrong, and what you'll change. Then go again with that update.",
+      "data": {
+        "steps": [
+          {
+            "t": "What went right",
+            "s": "Keep it"
+          },
+          {
+            "t": "What went wrong",
+            "s": "Own it"
+          },
+          {
+            "t": "What changes",
+            "s": "One concrete fix"
+          },
+          {
+            "t": "Go again",
+            "s": "With the update"
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "split",
+      "dur": 10,
+      "say": "It turns a bad day into data and keeps you honest about your part, without letting the failure define you.",
+      "data": {
+        "title": "Same setback, two outcomes",
+        "left": {
+          "label": "Just a bad day",
+          "rows": [
+            "Blame or brood",
+            "Same mistake again",
+            "Failure sticks"
+          ],
+          "tone": "dim"
+        },
+        "right": {
+          "label": "Debriefed",
+          "rows": [
+            "Own your part",
+            "One fix applied",
+            "Failure becomes data"
+          ],
+          "tone": "rev"
+        }
+      }
+    },
+    {
+      "primitive": "recall",
+      "dur": 6,
+      "say": "What three questions make up an after-action report?",
+      "data": {
+        "question": "What three questions make up an after-action report?",
+        "answer": "What went right, what went wrong, and what you'll change."
+      }
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "myth-brainstorm-1",
+  "title": "Brainstorming",
+  "strength": "Strong",
+  "beats": [
+    {
+      "primitive": "title",
+      "dur": 5,
+      "say": "Do groups come up with more ideas when they brainstorm together?",
+      "data": {
+        "kicker": "Myth vs evidence",
+        "lines": [
+          "Do groups",
+          "brainstorm more?"
+        ]
+      }
+    },
+    {
+      "primitive": "flow",
+      "dur": 10,
+      "say": "Usually not. While one person talks, everyone else waits, and ideas get lost. Researchers call it production blocking.",
+      "data": {
+        "steps": [
+          {
+            "t": "One person talks",
+            "s": "Everyone else waits"
+          },
+          {
+            "t": "Ideas queue up",
+            "s": "Some get forgotten"
+          },
+          {
+            "t": "People self-censor",
+            "s": "Fear of judgment"
+          },
+          {
+            "t": "Fewer ideas",
+            "s": "Than working alone"
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "split",
+      "dur": 10,
+      "say": "The fix is brainwriting. Everyone writes ideas alone first, then the group combines and picks the best.",
+      "data": {
+        "title": "Two ways to run the session",
+        "left": {
+          "label": "Group brainstorm",
+          "rows": [
+            "Talk out loud",
+            "One at a time",
+            "Ideas lost"
+          ],
+          "tone": "dim"
+        },
+        "right": {
+          "label": "Brainwriting",
+          "rows": [
+            "Write silently first",
+            "Then pool",
+            "Group selects"
+          ],
+          "tone": "rev"
+        }
+      }
+    },
+    {
+      "primitive": "recall",
+      "dur": 6,
+      "say": "Why do groups brainstorm fewer ideas?",
+      "data": {
+        "question": "Why do groups brainstorm fewer ideas?",
+        "answer": "Production blocking: while one person talks, others wait and lose ideas."
+      }
+    }
+  ]
+}

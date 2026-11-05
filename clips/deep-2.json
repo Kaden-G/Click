@@ -1,0 +1,99 @@
+{
+  "id": "deep-2",
+  "title": "Attention residue",
+  "beats": [
+    {
+      "primitive": "title",
+      "dur": 5,
+      "say": "Why does a quick email check cost more than it seems?",
+      "data": {
+        "kicker": "Deep Work · Cal Newport",
+        "lines": [
+          "Attention",
+          "residue"
+        ]
+      }
+    },
+    {
+      "primitive": "flow",
+      "dur": 10,
+      "say": "When you switch tasks, part of your attention stays behind on the last one. Researcher Sophie Leroy named this attention residue.",
+      "data": {
+        "steps": [
+          {
+            "t": "Deep task",
+            "s": "Full focus"
+          },
+          {
+            "t": "Quick check",
+            "s": "Inbox, two minutes"
+          },
+          {
+            "t": "Back to the task",
+            "s": "Part of you stays on email"
+          },
+          {
+            "t": "Slower, shallower",
+            "s": "Residue lingers"
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "split",
+      "dur": 10,
+      "say": "So a two-minute check can drag down the next stretch of work. Batching those checks protects your focus.",
+      "data": {
+        "title": "Same hour, two ways",
+        "left": {
+          "label": "Constant checks",
+          "rows": [
+            "Focus splits",
+            "Residue builds",
+            "Shallow output"
+          ],
+          "tone": "dim"
+        },
+        "right": {
+          "label": "Batched checks",
+          "rows": [
+            "One task at a time",
+            "Residue clears",
+            "Deep output"
+          ],
+          "tone": "rev"
+        }
+      }
+    },
+    {
+      "primitive": "flow",
+      "dur": 10,
+      "say": "The fix: batch shallow tasks into set windows, protect long blocks for deep work, and end the day with a shutdown ritual.",
+      "data": {
+        "steps": [
+          {
+            "t": "Batch email",
+            "s": "Two set windows"
+          },
+          {
+            "t": "Block deep time",
+            "s": "Phone out of reach"
+          },
+          {
+            "t": "Shutdown ritual",
+            "s": "Close open loops"
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "recall",
+      "dur": 6,
+      "say": "What is attention residue?",
+      "data": {
+        "question": "What is attention residue?",
+        "answer": "Part of your attention stays stuck on the last task after you switch."
+      }
+    }
+  ]
+}

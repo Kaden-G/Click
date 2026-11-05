@@ -1,0 +1,79 @@
+{
+  "id": "myth-styles-1",
+  "title": "Learning styles",
+  "strength": "Strong",
+  "beats": [
+    {
+      "primitive": "title",
+      "dur": 5,
+      "say": "Do you learn best when teaching matches your learning style?",
+      "data": {
+        "kicker": "Myth vs evidence",
+        "lines": [
+          "Visual learner?",
+          "Maybe not."
+        ]
+      }
+    },
+    {
+      "primitive": "split",
+      "dur": 11,
+      "say": "A 2008 review found no good evidence that matching teaching to learning styles helps. Pairing words with visuals helps nearly everyone.",
+      "data": {
+        "title": "Myth vs evidence",
+        "left": {
+          "label": "The myth",
+          "rows": [
+            "Visual learners",
+            "Auditory learners",
+            "Match your style"
+          ],
+          "tone": "dim"
+        },
+        "right": {
+          "label": "The evidence",
+          "rows": [
+            "Matching doesn't help",
+            "Visuals help everyone",
+            "Fit format to content"
+          ],
+          "tone": "rev"
+        }
+      }
+    },
+    {
+      "primitive": "flow",
+      "dur": 10,
+      "say": "So choose the format that fits the content, not the label.",
+      "data": {
+        "steps": [
+          {
+            "t": "Places",
+            "s": "Use a map"
+          },
+          {
+            "t": "Systems",
+            "s": "Use a diagram"
+          },
+          {
+            "t": "History",
+            "s": "Use a timeline"
+          },
+          {
+            "t": "Arguments",
+            "s": "Use words"
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "recall",
+      "dur": 6,
+      "say": "What helps nearly all learners?",
+      "data": {
+        "question": "What helps nearly all learners?",
+        "answer": "Pairing words with relevant visuals, and fitting the format to the content."
+      }
+    }
+  ]
+}

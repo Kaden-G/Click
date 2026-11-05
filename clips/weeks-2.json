@@ -1,0 +1,93 @@
+{
+  "id": "weeks-2",
+  "title": "The efficiency trap",
+  "beats": [
+    {
+      "primitive": "title",
+      "dur": 5,
+      "say": "Why doesn't getting faster give you free time?",
+      "data": {
+        "kicker": "Four Thousand Weeks · Oliver Burkeman",
+        "lines": [
+          "The efficiency",
+          "trap"
+        ]
+      }
+    },
+    {
+      "primitive": "flow",
+      "dur": 10,
+      "say": "Get faster at your tasks and you look more capable. Expectations rise, more work arrives, and you end up busier than before.",
+      "data": {
+        "steps": [
+          {
+            "t": "Work faster",
+            "s": "Clear the backlog"
+          },
+          {
+            "t": "Look more capable",
+            "s": "Expectations rise"
+          },
+          {
+            "t": "More arrives",
+            "s": "The inbox refills"
+          },
+          {
+            "t": "Busier than before",
+            "s": "Back to the start"
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "intervals",
+      "dur": 8,
+      "say": "Meanwhile, time is finite. Eighty years is only about four thousand weeks.",
+      "data": {
+        "title": "Weeks in an 80-year life",
+        "max": 4160,
+        "unit": "",
+        "items": [
+          {
+            "label": "By age 40",
+            "value": 2080
+          },
+          {
+            "label": "By age 80",
+            "value": 4160
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "flow",
+      "dur": 9,
+      "say": "So stop trying to fit everything in. Choose what matters, decide what to neglect, and cap what's in progress.",
+      "data": {
+        "steps": [
+          {
+            "t": "Choose what matters",
+            "s": "A few things"
+          },
+          {
+            "t": "Decide what to neglect",
+            "s": "On purpose"
+          },
+          {
+            "t": "Cap active projects",
+            "s": "About three"
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "recall",
+      "dur": 6,
+      "say": "Why doesn't working faster free up time?",
+      "data": {
+        "question": "Why doesn't working faster free up time?",
+        "answer": "Higher efficiency raises expectations, so more work arrives."
+      }
+    }
+  ]
+}

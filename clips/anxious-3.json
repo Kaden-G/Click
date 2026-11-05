@@ -1,0 +1,64 @@
+{
+  "id": "anxious-3",
+  "title": "Four proposed harms",
+  "beats": [
+    {
+      "primitive": "title",
+      "dur": 6,
+      "say": "How might a phone-based childhood affect teens? Haidt proposes four mechanisms.",
+      "data": {
+        "kicker": "The Anxious Generation · Jonathan Haidt",
+        "lines": [
+          "Four proposed",
+          "harms"
+        ]
+      }
+    },
+    {
+      "primitive": "flow",
+      "dur": 10,
+      "say": "Less face-to-face time with friends, less sleep, fragmented attention, and apps designed to be hard to put down.",
+      "data": {
+        "steps": [
+          {
+            "t": "Social deprivation",
+            "s": "Less time with friends"
+          },
+          {
+            "t": "Sleep deprivation",
+            "s": "Screens push bedtime"
+          },
+          {
+            "t": "Fragmented attention",
+            "s": "Constant interruptions"
+          },
+          {
+            "t": "Addictive design",
+            "s": "Hard to put down"
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "title",
+      "dur": 11,
+      "say": "Each mechanism is plausible, but researchers disagree on the causal evidence. Critics say the data are mostly correlational and the effects small.",
+      "data": {
+        "kicker": "The debate",
+        "lines": [
+          "Strong hypothesis,",
+          "not settled"
+        ]
+      }
+    },
+    {
+      "primitive": "recall",
+      "dur": 7,
+      "say": "Name the four proposed harms.",
+      "data": {
+        "question": "Name the four proposed harms.",
+        "answer": "Social deprivation, sleep deprivation, fragmented attention, and addictive design."
+      }
+    }
+  ]
+}

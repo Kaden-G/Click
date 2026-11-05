@@ -1,0 +1,80 @@
+{
+  "id": "weeks-1",
+  "title": "About 4,000 weeks",
+  "beats": [
+    {
+      "primitive": "title",
+      "dur": 5,
+      "say": "What does a whole life look like, counted in weeks?",
+      "data": {
+        "kicker": "Four Thousand Weeks · Oliver Burkeman",
+        "lines": [
+          "About 4,000",
+          "weeks"
+        ]
+      }
+    },
+    {
+      "primitive": "grid",
+      "dur": 10,
+      "say": "Here's an eighty-year life, one dot per week. Each row is a year. That's about four thousand weeks in total.",
+      "data": {
+        "title": "80 years, one dot per week",
+        "total": 4160,
+        "cols": 52,
+        "filled": 0,
+        "note": "52 weeks × 80 rows",
+        "legend": [
+          {
+            "tone": "empty",
+            "label": "One week"
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "grid",
+      "dur": 10,
+      "say": "By age forty, half of them are behind you. Seeing it this way makes time feel less infinite, and choices feel more real.",
+      "data": {
+        "title": "By age 40",
+        "total": 4160,
+        "cols": 52,
+        "filled": 2080,
+        "fillTone": "mem",
+        "note": "2,080 of 4,160",
+        "legend": [
+          {
+            "tone": "mem",
+            "label": "Used"
+          },
+          {
+            "tone": "empty",
+            "label": "Still ahead"
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "title",
+      "dur": 9,
+      "say": "Burkeman's point isn't panic. It's that a finite life forces you to choose, and choosing well beats trying to fit everything in.",
+      "data": {
+        "kicker": "The point",
+        "lines": [
+          "Choose,",
+          "don't cram"
+        ]
+      }
+    },
+    {
+      "primitive": "recall",
+      "dur": 6,
+      "say": "Roughly how many weeks are in an 80-year life?",
+      "data": {
+        "question": "Roughly how many weeks are in an 80-year life?",
+        "answer": "About four thousand. Eighty times fifty-two is 4,160."
+      }
+    }
+  ]
+}

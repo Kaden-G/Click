@@ -1,0 +1,78 @@
+{
+  "id": "voss-2",
+  "title": "Mirroring",
+  "beats": [
+    {
+      "primitive": "title",
+      "dur": 5,
+      "say": "Here's a negotiation tool that takes three words and a pause.",
+      "data": {
+        "kicker": "Never Split the Difference · Chris Voss",
+        "lines": [
+          "Mirror,",
+          "then pause"
+        ]
+      }
+    },
+    {
+      "primitive": "flow",
+      "dur": 11,
+      "say": "Repeat the last few key words the other person said, with a slight questioning tone. Then stay quiet. They'll almost always explain more.",
+      "data": {
+        "steps": [
+          {
+            "t": "They speak",
+            "s": "Listen fully"
+          },
+          {
+            "t": "You mirror",
+            "s": "Repeat the last few words"
+          },
+          {
+            "t": "You pause",
+            "s": "Let silence work"
+          },
+          {
+            "t": "They expand",
+            "s": "New information surfaces"
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "split",
+      "dur": 10,
+      "say": "Instead of arguing, you buy time, build rapport, and draw out information you'd never get by pushing.",
+      "data": {
+        "title": "Same moment, two moves",
+        "left": {
+          "label": "Arguing",
+          "rows": [
+            "They defend",
+            "You guess",
+            "Positions harden"
+          ],
+          "tone": "dim"
+        },
+        "right": {
+          "label": "Mirroring",
+          "rows": [
+            "They explain",
+            "You learn",
+            "Rapport builds"
+          ],
+          "tone": "rev"
+        }
+      }
+    },
+    {
+      "primitive": "recall",
+      "dur": 6,
+      "say": "After you mirror someone, what do you do next?",
+      "data": {
+        "question": "After you mirror someone, what do you do next?",
+        "answer": "Pause and stay quiet. Let them expand."
+      }
+    }
+  ]
+}

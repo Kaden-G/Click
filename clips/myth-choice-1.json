@@ -1,0 +1,75 @@
+{
+  "id": "myth-choice-1",
+  "title": "Choice overload",
+  "strength": "Moderate",
+  "beats": [
+    {
+      "primitive": "title",
+      "dur": 5,
+      "say": "Do too many options make people freeze?",
+      "data": {
+        "kicker": "Myth vs evidence",
+        "lines": [
+          "Too many choices",
+          "paralyze us?"
+        ]
+      }
+    },
+    {
+      "primitive": "split",
+      "dur": 11,
+      "say": "The famous jam study said yes. But a 2010 meta-analysis found the average effect across studies was close to zero.",
+      "data": {
+        "title": "The legend vs the meta-analysis",
+        "left": {
+          "label": "The legend",
+          "rows": [
+            "24 jams vs 6",
+            "Shoppers freeze",
+            "Fewer buy"
+          ],
+          "tone": "dim"
+        },
+        "right": {
+          "label": "The meta-analysis",
+          "rows": [
+            "Many studies combined",
+            "Average near zero",
+            "Depends on context"
+          ],
+          "tone": "rev"
+        }
+      }
+    },
+    {
+      "primitive": "flow",
+      "dur": 9,
+      "say": "Overload does show up under specific conditions: complex options, unclear preferences, or time pressure.",
+      "data": {
+        "steps": [
+          {
+            "t": "Complex options",
+            "s": "Hard to compare"
+          },
+          {
+            "t": "Unclear preferences",
+            "s": "You don't know what you want"
+          },
+          {
+            "t": "Time pressure",
+            "s": "No room to think"
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "recall",
+      "dur": 6,
+      "say": "When does choice overload actually show up?",
+      "data": {
+        "question": "When does choice overload actually show up?",
+        "answer": "Under specific conditions, like complex options, unclear preferences, or time pressure."
+      }
+    }
+  ]
+}

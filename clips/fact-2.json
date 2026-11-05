@@ -1,0 +1,81 @@
+{
+  "id": "fact-2",
+  "title": "Drop the gap",
+  "beats": [
+    {
+      "primitive": "title",
+      "dur": 5,
+      "say": "Is the world really split into rich countries and poor ones?",
+      "data": {
+        "kicker": "Factfulness · Hans Rosling",
+        "lines": [
+          "Drop the",
+          "gap"
+        ]
+      }
+    },
+    {
+      "primitive": "flow",
+      "dur": 12,
+      "say": "Rosling replaces the two-camp picture with four income levels. Each level is about four times the one below, and most people today live in the middle two.",
+      "data": {
+        "steps": [
+          {
+            "t": "Level 1",
+            "s": "Under $2 a day"
+          },
+          {
+            "t": "Level 2",
+            "s": "$2 to $8 a day"
+          },
+          {
+            "t": "Level 3",
+            "s": "$8 to $32 a day"
+          },
+          {
+            "t": "Level 4",
+            "s": "Over $32 a day"
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "growth",
+      "dur": 9,
+      "say": "And trends bend. Population growth, for example, slows as child mortality falls and families get smaller.",
+      "data": {
+        "title": "Trends bend",
+        "points": 100,
+        "xLabel": "Time",
+        "hideY": true,
+        "note": "Schematic shape",
+        "series": [
+          {
+            "label": "Straight-line guess",
+            "fn": "linear",
+            "rate": 0.06,
+            "tone": "dim",
+            "dash": true
+          },
+          {
+            "label": "Bending curve",
+            "fn": "logistic",
+            "K": 4,
+            "mid": 30,
+            "rate": 0.08,
+            "tone": "rev"
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "recall",
+      "dur": 6,
+      "say": "How many income levels does Rosling use instead of two camps?",
+      "data": {
+        "question": "How many income levels does Rosling use instead of two camps?",
+        "answer": "Four. Most people live in the middle two."
+      }
+    }
+  ]
+}

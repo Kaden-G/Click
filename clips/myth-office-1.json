@@ -1,0 +1,78 @@
+{
+  "id": "myth-office-1",
+  "title": "Open offices",
+  "strength": "Moderate",
+  "beats": [
+    {
+      "primitive": "title",
+      "dur": 5,
+      "say": "Do open-plan offices get people talking more?",
+      "data": {
+        "kicker": "Myth vs evidence",
+        "lines": [
+          "Do open offices",
+          "boost teamwork?"
+        ]
+      }
+    },
+    {
+      "primitive": "compare",
+      "dur": 11,
+      "say": "When two companies tore down walls, sensor badges showed face-to-face interaction fell by roughly seventy percent. Email and messaging went up instead.",
+      "data": {
+        "title": "Face-to-face time after the move",
+        "items": [
+          {
+            "label": "Before",
+            "value": 1,
+            "tone": "dim"
+          },
+          {
+            "label": "After",
+            "value": 0.3,
+            "tone": "mem"
+          }
+        ],
+        "note": [
+          "Roughly a 70% drop",
+          "Bernstein & Turban, 2018"
+        ]
+      }
+    },
+    {
+      "primitive": "split",
+      "dur": 10,
+      "say": "People protected their privacy by looking busy. The evidence is moderate, though, because it covers only two companies.",
+      "data": {
+        "title": "Expected vs measured",
+        "left": {
+          "label": "Expected",
+          "rows": [
+            "More talking",
+            "More teamwork",
+            "Faster ideas"
+          ],
+          "tone": "dim"
+        },
+        "right": {
+          "label": "Measured",
+          "rows": [
+            "Less face time",
+            "More email",
+            "Headphones on"
+          ],
+          "tone": "rev"
+        }
+      }
+    },
+    {
+      "primitive": "recall",
+      "dur": 6,
+      "say": "What happened to face-to-face time after the open-plan move?",
+      "data": {
+        "question": "What happened to face-to-face time after the open-plan move?",
+        "answer": "It fell by roughly seventy percent, while email and messaging rose."
+      }
+    }
+  ]
+}

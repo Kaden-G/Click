@@ -1,0 +1,134 @@
+{
+  "id": "myth-ties-1",
+  "title": "Weak ties",
+  "strength": "Strong",
+  "beats": [
+    {
+      "primitive": "title",
+      "dur": 5,
+      "say": "Will your next job come from a close friend or an acquaintance?",
+      "data": {
+        "kicker": "Myth vs evidence",
+        "lines": [
+          "Who gets you",
+          "your next job?"
+        ]
+      }
+    },
+    {
+      "primitive": "network",
+      "dur": 13,
+      "say": "Close friends share your circle, so they hear about the same things you do. Acquaintances bridge to other circles, where new openings live.",
+      "data": {
+        "title": "How new information reaches you",
+        "chokeLabel": "Bridge to new circles",
+        "nodes": [
+          {
+            "id": "you",
+            "label": "You",
+            "layer": 0
+          },
+          {
+            "id": "f1",
+            "label": "Close friend",
+            "layer": 1
+          },
+          {
+            "id": "f2",
+            "label": "Close friend",
+            "layer": 1
+          },
+          {
+            "id": "acq",
+            "label": "Acquaintance",
+            "layer": 1
+          },
+          {
+            "id": "own",
+            "label": "Your circle",
+            "layer": 2
+          },
+          {
+            "id": "new",
+            "label": "New circle",
+            "layer": 2
+          },
+          {
+            "id": "job",
+            "label": "New opening",
+            "layer": 3
+          }
+        ],
+        "links": [
+          [
+            "you",
+            "f1"
+          ],
+          [
+            "you",
+            "f2"
+          ],
+          [
+            "you",
+            "acq"
+          ],
+          [
+            "f1",
+            "own"
+          ],
+          [
+            "f2",
+            "own"
+          ],
+          [
+            "acq",
+            "new"
+          ],
+          [
+            "new",
+            "job"
+          ]
+        ],
+        "choke": [
+          "acq",
+          "new"
+        ]
+      }
+    },
+    {
+      "primitive": "split",
+      "dur": 11,
+      "say": "A randomized study of about twenty million LinkedIn users found moderately weak ties led to the most job moves.",
+      "data": {
+        "title": "What a 2022 LinkedIn study found",
+        "left": {
+          "label": "Strong ties",
+          "rows": [
+            "Many mutual friends",
+            "Same information",
+            "Fewer job moves"
+          ],
+          "tone": "dim"
+        },
+        "right": {
+          "label": "Moderately weak ties",
+          "rows": [
+            "A few mutual friends",
+            "New information",
+            "Most job moves"
+          ],
+          "tone": "rev"
+        }
+      }
+    },
+    {
+      "primitive": "recall",
+      "dur": 6,
+      "say": "Which ties led to the most job moves?",
+      "data": {
+        "question": "Which ties led to the most job moves?",
+        "answer": "Moderately weak ties: people you share only a few connections with."
+      }
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+[
+  {
+    "id": "atomic",
+    "short": "Atomic Habits",
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "year": 2018,
+    "clicks": [
+      {
+        "t": "Tiny gains compound",
+        "b": "Improving 1% a day multiplies out to roughly 37 times better over a year, and slipping 1% a day decays toward zero. The catch is that results lag behavior. Early effort looks like it's doing nothing until it crosses a threshold and suddenly shows.",
+        "y": "Track one habit by whether you did it today, not by results."
+      },
+      {
+        "t": "Systems beat goals",
+        "b": "Winners and losers often have identical goals, so the goal can't be what separates them. The system does: the daily process that produces the outcome. Goals set direction. Systems are what actually move you, and they keep working after the goal is hit.",
+        "y": "Rewrite one goal as a daily process you control."
+      },
+      {
+        "t": "Habits are identity votes",
+        "b": "Lasting change starts with who you want to become, not what you want to get. Each repetition is evidence that you're that kind of person. You don't need a unanimous vote, just a majority, so one missed day doesn't erase the identity.",
+        "y": "Finish this sentence: I'm the type of person who..."
+      },
+      {
+        "t": "The four laws",
+        "b": "To build a habit, make the cue obvious, the action attractive, the effort easy, and the reward satisfying. To break one, invert each: make it invisible, unattractive, difficult and unsatisfying. Most habit fixes come down to adjusting one of these four levers.",
+        "y": "Pick a bad habit and add one step of friction to it."
+      },
+      {
+        "t": "Two minutes and a good room",
+        "b": "Shrink a new habit until it takes two minutes, like putting on running shoes instead of running. You're mastering the art of showing up first. Then shape your environment so the right cue is in plain sight and the wrong one is out of reach.",
+        "y": "Set out tomorrow's first habit tool tonight."
+      }
+    ]
+  },
+  {
+    "id": "money",
+    "short": "Psychology of Money",
+    "title": "The Psychology of Money",
+    "author": "Morgan Housel",
+    "year": 2020,
+    "clicks": [
+      {
+        "t": "Behavior beats IQ",
+        "b": "Doing well with money depends more on how you behave than on what you know. People make money decisions from their own lived experience, like the inflation or crashes they grew up through. That's why smart people can act in ways that look irrational from outside.",
+        "y": "Name one money belief you got from your upbringing."
+      },
+      {
+        "t": "Know when you have enough",
+        "b": "The hardest financial skill is stopping the goalpost from moving. Risking what you have and need to get what you don't have and don't need is how comfortable people end up ruined. Enough is a decision, not a number you stumble into.",
+        "y": "Write down what enough looks like for your household."
+      },
+      {
+        "t": "Tails drive everything",
+        "b": "A small number of events produce most outcomes: a few investments, a few career moves, a few decisions. That means you can be wrong a lot and still do very well, as long as you stay in the game long enough to catch the rare big wins.",
+        "y": "List the three decisions that most shaped your finances."
+      },
+      {
+        "t": "Leave room for error",
+        "b": "Plan on your plan not going to plan. A margin of safety, like savings, lower fixed costs or conservative assumptions, lets you survive bad luck without being forced to sell or quit. Survival comes first because compounding only works if you stay in.",
+        "y": "Check how many months your household could run on savings."
+      },
+      {
+        "t": "Wealth is what you don't see",
+        "b": "Spending shows that someone was rich at some point. Wealth is the money that wasn't spent, so it's invisible. What it buys is options, and the biggest one is control over your own time. That freedom tends to matter more than the things.",
+        "y": "Spot one purchase that would trade future time for present looks."
+      }
+    ]
+  },
+  {
+    "id": "deep",
+    "short": "Deep Work",
+    "title": "Deep Work",
+    "author": "Cal Newport",
+    "year": 2016,
+    "clicks": [
+      {
+        "t": "Deep vs shallow work",
+        "b": "Deep work is focused, demanding effort that pushes your skills and creates new value. Shallow work is logistics: email, meetings, status updates. Shallow work is easy to replicate. Deep work is getting rarer just as it gets more valuable, which makes it a career edge.",
+        "y": "Estimate what share of yesterday was deep work."
+      },
+      {
+        "t": "Attention residue",
+        "b": "When you switch tasks, part of your attention stays stuck on the last one. Organizational researcher Sophie Leroy calls this attention residue. A quick inbox check mid-task can drag down the next stretch of work more than the check itself took.",
+        "y": "Batch email into two fixed windows today."
+      },
+      {
+        "t": "Pick a depth philosophy",
+        "b": "There's more than one way to fit deep work into a life. Monastic means cutting nearly all distraction. Bimodal means full days or weeks of depth. Rhythmic means the same block every day. Journalistic means diving in whenever a gap opens. Choose the one your job allows.",
+        "y": "Choose a rhythm and put the next block on your calendar."
+      },
+      {
+        "t": "Embrace boredom",
+        "b": "If you reach for your phone at every pause, your brain learns to expect novelty and loses its tolerance for focus. Instead of taking breaks from focus, schedule breaks from focus: set times for internet use and stay offline outside them.",
+        "y": "Wait in one line today without your phone."
+      },
+      {
+        "t": "Block every minute",
+        "b": "Give each part of the workday a job by time-blocking it, and revise the blocks as the day changes. Then end with a shutdown ritual: review open loops, plan tomorrow, and say you're done. Closing loops is what lets your mind actually rest.",
+        "y": "Write a three-step shutdown ritual and run it tonight."
+      }
+    ]
+  },
+  {
+    "id": "range",
+    "short": "Range",
+    "title": "Range",
+    "author": "David Epstein",
+    "year": 2019,
+    "clicks": [
+      {
+        "t": "Kind vs wicked worlds",
+        "b": "In kind learning environments like chess or golf, rules are stable and feedback is fast and accurate, so early specialization pays off. Most real work is wicked: rules shift and feedback is late or misleading. There, broad experience usually beats a narrow head start.",
+        "y": "Ask whether your current project gives kind or wicked feedback."
+      },
+      {
+        "t": "Match quality",
+        "b": "Match quality is how well your work fits your abilities and interests. A sampling period, trying several paths before committing, improves it. People who switch fields are often judged as late, but the better fit tends to pay them back with faster growth.",
+        "y": "Name one past switch that improved your fit."
+      },
+      {
+        "t": "Desirable difficulties",
+        "b": "Learning that feels slow and effortful, like testing yourself, mixing problem types, or spacing practice out, builds knowledge that lasts and transfers. Smooth, blocked practice feels productive but fades. The struggle is often the signal that learning is happening.",
+        "y": "Mix two topics in your next study session."
+      },
+      {
+        "t": "Think in far analogies",
+        "b": "Novel problems are often solved by borrowing structure from distant fields. People who draw analogies from several unrelated domains generate better solutions than those who stay inside one. Outsiders regularly crack problems that stumped specialists for years.",
+        "y": "Ask how a Marine planner would frame your current problem."
+      },
+      {
+        "t": "Old tools, new uses",
+        "b": "Nintendo's Gunpei Yokoi championed using mature, cheap technology in new ways instead of chasing the cutting edge. The Game Boy beat flashier rivals on battery life and price. Breadth lets you see new uses for tools that specialists consider finished.",
+        "y": "List one boring tool you could combine in a fresh way."
+      }
+    ]
+  },
+  {
+    "id": "voss",
+    "short": "Never Split the Difference",
+    "title": "Never Split the Difference",
+    "author": "Chris Voss with Tahl Raz",
+    "year": 2016,
+    "clicks": [
+      {
+        "t": "Tactical empathy",
+        "b": "Voss, a former FBI hostage negotiator, treats negotiation as emotional first and logical second. Tactical empathy means understanding the other side's feelings and saying them out loud. It isn't agreeing or being nice. It's showing you get it, which lowers defenses.",
+        "y": "In your next disagreement, state their view before yours."
+      },
+      {
+        "t": "Mirroring",
+        "b": "Repeat the last few key words someone said, with a slight questioning tone, then wait. People almost always expand on what they meant. It buys you time, builds rapport, and surfaces information without you having to argue or ask a pointed question.",
+        "y": "Use one mirror in a meeting today and stay quiet after."
+      },
+      {
+        "t": "Labeling",
+        "b": "Name the emotion you're sensing, starting with something like 'It seems like' or 'It sounds like,' then pause. Labeling a negative feeling tends to defuse it, and labeling a positive one reinforces it. Avoid starting with 'I,' which makes it about you.",
+        "y": "Label one feeling in a conversation instead of fixing it."
+      },
+      {
+        "t": "Calibrated questions",
+        "b": "Open questions that start with how or what get the other side working on your problem. 'How am I supposed to do that?' says no without saying no. Avoid why, which tends to sound like an accusation and makes people defend instead of think.",
+        "y": "Turn one demand into a how question this week."
+      },
+      {
+        "t": "Go for 'that's right'",
+        "b": "'You're right' usually means 'please stop talking.' 'That's right' means you've summarized someone's view so accurately they fully agree with it. That moment is real buy-in. Get there with a summary that combines what they said and how they feel.",
+        "y": "Summarize a colleague's position until they say that's right."
+      }
+    ]
+  },
+  {
+    "id": "weeks",
+    "short": "Four Thousand Weeks",
+    "title": "Four Thousand Weeks",
+    "author": "Oliver Burkeman",
+    "year": 2021,
+    "clicks": [
+      {
+        "t": "About 4,000 weeks",
+        "b": "If you live to 80, you get roughly four thousand weeks. That number is meant as a starting point, not a panic button. Time management that pretends you can fit everything in fails. Accepting your limits is what lets you choose well.",
+        "y": "Do the math on how many weeks you've already used."
+      },
+      {
+        "t": "The efficiency trap",
+        "b": "Getting faster at tasks rarely creates free time. It raises expectations and invites more work, the way a cleared inbox refills. Being more efficient can make you busier. The way out is choosing what deserves your time, not cramming more in.",
+        "y": "Notice one task that grew after you sped it up."
+      },
+      {
+        "t": "Decide what to neglect",
+        "b": "You will always leave important things undone. The question is whether you choose what slides or let it happen by accident. Decide in advance which areas of life you'll accept being mediocre at for now, so you can be excellent where it counts.",
+        "y": "Name one area you'll consciously underperform in this month."
+      },
+      {
+        "t": "Limit work in progress",
+        "b": "Keep a small cap on active projects, around three, and don't start a new one until one is finished. Everything else waits in a queue. Fewer open projects means each one actually moves, instead of everything inching forward at once.",
+        "y": "Count your active projects and park any beyond three."
+      },
+      {
+        "t": "Cosmic insignificance helps",
+        "b": "Measured against the universe, nobody's life makes much of a dent. That sounds bleak, but it's freeing. It removes the pressure to do something extraordinary and makes room to value ordinary things: a meal, a walk, time with people you love.",
+        "y": "Do one ordinary thing today without optimizing it."
+      }
+    ]
+  },
+  {
+    "id": "fact",
+    "short": "Factfulness",
+    "title": "Factfulness",
+    "author": "Hans Rosling with Ola Rosling and Anna Rosling Rönnlund",
+    "year": 2018,
+    "clicks": [
+      {
+        "t": "Worse than random",
+        "b": "On simple multiple-choice questions about global trends like poverty, vaccination and life expectancy, most people, including experts, score worse than random guessing. The errors aren't random either. They lean consistently pessimistic, which points to a bias, not missing facts.",
+        "y": "Guess today's global extreme poverty rate, then look it up."
+      },
+      {
+        "t": "Drop the gap",
+        "b": "Splitting the world into developed and developing countries is outdated. Most people live in the middle. Rosling suggests four income levels instead, which shows a spread rather than two camps and makes progress visible as countries move up.",
+        "y": "Place three countries you know on the four levels."
+      },
+      {
+        "t": "Bad and better",
+        "b": "Things can be bad and getting better at the same time. News favors sudden drama, while slow improvement rarely makes headlines. Holding both ideas at once keeps you from despair without pretending problems are solved.",
+        "y": "Find one trend that is bad but improving."
+      },
+      {
+        "t": "Lines bend",
+        "b": "Many trends don't continue in a straight line. Global population growth, for example, slows as child mortality falls and families choose fewer children. Extending a line forever leads to wrong forecasts, so ask what shape the curve really has.",
+        "y": "Question one forecast you heard that assumes a straight line."
+      },
+      {
+        "t": "Resist urgency",
+        "b": "Now-or-never pressure narrows thinking and drives bad decisions. When someone insists a choice must be made immediately, take a breath, ask for data, and favor small, reversible steps. Real emergencies exist, but manufactured ones are more common.",
+        "y": "Delay one 'urgent' decision long enough to check the data."
+      }
+    ]
+  },
+  {
+    "id": "anxious",
+    "short": "The Anxious Generation",
+    "title": "The Anxious Generation",
+    "author": "Jonathan Haidt",
+    "year": 2024,
+    "clicks": [
+      {
+        "t": "The Great Rewiring",
+        "b": "Haidt argues that between roughly 2010 and 2015, childhood moved from play-based to phone-based as smartphones and social media spread to teens. He links that shift to the sharp rise in teen anxiety and depression seen in several countries during the same years.",
+        "y": "Notice how your own phone use has changed since 2010."
+      },
+      {
+        "t": "Protected in the wrong place",
+        "b": "Haidt's framing is that kids today are overprotected in the real world and underprotected online. Free play, risk and independence shrank offline while unsupervised access to the internet grew. He sees both trends as working against healthy development.",
+        "y": "Name one independence you had as a kid that's now rare."
+      },
+      {
+        "t": "Four proposed harms",
+        "b": "The book names four mechanisms for harm: social deprivation as screen time replaces time with friends, sleep deprivation, fragmented attention, and addictive design. Each is plausible on its own, and Haidt argues together they reshape adolescence.",
+        "y": "Check which of the four shows up in your own week."
+      },
+      {
+        "t": "Four norms",
+        "b": "Haidt proposes four collective norms: no smartphones before high school, no social media before 16, phone-free schools, and far more independence and free play. He frames them as group norms because single families find them hard to hold alone.",
+        "y": "Think through which norm you'd set first for a future kid."
+      },
+      {
+        "t": "The evidence is contested",
+        "b": "Critics, including psychologist Candice Odgers in a 2024 review in Nature, argue the data are mostly correlational and the measured effects small, so the book overstates causation. Haidt replies that waiting for proof carries its own risk. Treat it as a strong hypothesis, not settled science.",
+        "y": "Before citing it, separate the claim from the evidence.",
+        "flag": "This book's core causal claim is actively debated by researchers."
+      }
+    ]
+  },
+  {
+    "id": "chip",
+    "short": "Chip War",
+    "title": "Chip War",
+    "author": "Chris Miller",
+    "year": 2022,
+    "clicks": [
+      {
+        "t": "Chips are the new oil",
+        "b": "Miller argues that semiconductors are the critical resource of the modern economy and military, much as oil was in the 20th century. Phones, cars, data centers and weapons all depend on them, so whoever controls chip production holds real leverage.",
+        "y": "Count how many devices in one room depend on chips."
+      },
+      {
+        "t": "The foundry model",
+        "b": "In 1987 Morris Chang founded TSMC to manufacture chips designed by other companies. That foundry model let fabless designers like Nvidia and Apple build world-class chips without owning factories, and it concentrated advanced manufacturing in one place.",
+        "y": "Look up who manufactures the chip in your phone."
+      },
+      {
+        "t": "Chokepoints",
+        "b": "A few companies control steps nobody else can do. The Dutch firm ASML is the only maker of extreme ultraviolet lithography machines needed for the most advanced chips. These chokepoints make the supply chain efficient and also very fragile.",
+        "y": "Map one chokepoint in a system you work on."
+      },
+      {
+        "t": "Taiwan risk",
+        "b": "Because so much cutting-edge manufacturing sits in Taiwan, the island is central to global supply chains and to tension between the US and China. A disruption there would ripple through nearly every industry, which is why chips became a security issue.",
+        "y": "Ask how your team's hardware plans would handle a supply shock."
+      },
+      {
+        "t": "Chips as statecraft",
+        "b": "Miller treats chip supply chains as a tool of power. That became concrete when the US imposed export controls on advanced chips and chipmaking tools to China in October 2022. Control of the technology, not just its use, became a strategic lever.",
+        "y": "Read the current export rules that touch AI hardware."
+      }
+    ]
+  },
+  {
+    "id": "goggins",
+    "short": "Can't Hurt Me",
+    "title": "Can't Hurt Me",
+    "author": "David Goggins",
+    "year": 2018,
+    "clicks": [
+      {
+        "t": "The 40% rule",
+        "b": "Goggins argues that when your mind tells you you're done, you've only used about 40% of what you have. Treat the number as a motivational rule of thumb, not a measured figure. The point is that the first urge to quit is a governor, not a limit.",
+        "y": "Next time you want to stop, do one more set or rep.",
+        "flag": "The 40% figure is a heuristic, not a research finding."
+      },
+      {
+        "t": "Accountability mirror",
+        "b": "Write your goals and your hard truths on sticky notes and put them on the mirror you see every morning. Facing them daily makes self-deception harder. Update the notes as you hit goals so the mirror tracks progress, not just problems.",
+        "y": "Put one honest sticky note on your mirror tonight."
+      },
+      {
+        "t": "The cookie jar",
+        "b": "Keep a mental jar of past wins and hardships you've already overcome. When you're struggling, reach in and remember that you've done hard things before. It turns your history into fuel instead of leaving it as a story you rarely revisit.",
+        "y": "Write down three hard things you've already pushed through."
+      },
+      {
+        "t": "Callous your mind",
+        "b": "Toughness comes from doing uncomfortable things on purpose, repeatedly. Like hands that build calluses, the mind adapts to discomfort and stops treating it as a threat. Choosing the harder option in small daily ways builds capacity for the big ones.",
+        "y": "Choose the harder option on one small task today."
+      },
+      {
+        "t": "After-action reports",
+        "b": "After a failure, run a debrief: what went right, what went wrong, and what you'll change next time. Writing it down turns a bad day into usable data. It keeps you honest about your part without letting the failure define you.",
+        "y": "Write a three-line AAR on a recent setback."
+      }
+    ]
+  }
+]

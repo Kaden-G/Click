@@ -1,0 +1,136 @@
+{
+  "id": "spaced-repetition-101",
+  "title": "Why spaced repetition works",
+  "beats": [
+    {
+      "primitive": "title",
+      "dur": 6,
+      "say": "Why does spaced repetition work? It comes down to one curve.",
+      "data": {
+        "kicker": "Memory, in 60 seconds",
+        "lines": [
+          "Why spaced",
+          "repetition works"
+        ]
+      }
+    },
+    {
+      "primitive": "curve",
+      "dur": 9,
+      "say": "This is the forgetting curve. Learn something new, and without review, most of it fades within days.",
+      "data": {
+        "reviews": []
+      }
+    },
+    {
+      "primitive": "curve",
+      "dur": 8,
+      "say": "Review it once, right as it starts to slip, and memory jumps back up.",
+      "data": {
+        "reviews": [
+          1
+        ],
+        "ghost": true
+      }
+    },
+    {
+      "primitive": "curve",
+      "dur": 9,
+      "say": "Each review makes the next drop slower. The curve flattens out.",
+      "data": {
+        "reviews": [
+          1,
+          3,
+          8
+        ],
+        "ghost": true
+      }
+    },
+    {
+      "primitive": "intervals",
+      "dur": 9,
+      "say": "So the gaps can grow. One day, then two, then five, then twelve.",
+      "data": {
+        "title": "Gap before each review",
+        "max": 12,
+        "unit": "d",
+        "items": [
+          {
+            "label": "Review 1",
+            "value": 1
+          },
+          {
+            "label": "Review 2",
+            "value": 2
+          },
+          {
+            "label": "Review 3",
+            "value": 5
+          },
+          {
+            "label": "Review 4",
+            "value": 12
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "compare",
+      "dur": 10,
+      "say": "How you review matters too. Pulling the answer from memory beats rereading it, as Roediger and Karpicke showed in 2006.",
+      "data": {
+        "title": "Remembered a week later",
+        "items": [
+          {
+            "label": "Reread",
+            "value": 0.45,
+            "tone": "dim"
+          },
+          {
+            "label": "Recall",
+            "value": 0.75,
+            "tone": "mem"
+          }
+        ],
+        "note": [
+          "Illustrative heights",
+          "Direction: Roediger & Karpicke, 2006"
+        ]
+      }
+    },
+    {
+      "primitive": "flow",
+      "dur": 9,
+      "say": "So the loop is simple. Save it, wait until it's due, recall it, and let the spacing grow.",
+      "data": {
+        "steps": [
+          {
+            "t": "Save",
+            "s": "One idea per card"
+          },
+          {
+            "t": "Wait until due",
+            "s": "Scheduler picks the day"
+          },
+          {
+            "t": "Recall, don't reread",
+            "s": "Answer before you flip"
+          },
+          {
+            "t": "Spacing grows",
+            "s": "Next gap gets longer"
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "recall",
+      "dur": 6,
+      "say": "Your turn. Which works better for memory: rereading, or recalling?",
+      "data": {
+        "question": "Which works better for memory: rereading, or recalling?",
+        "answer": "Recalling. Pulling the answer from memory makes it stick."
+      }
+    }
+  ]
+}

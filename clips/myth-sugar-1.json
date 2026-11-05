@@ -1,0 +1,77 @@
+{
+  "id": "myth-sugar-1",
+  "title": "Sugar and kids",
+  "strength": "Strong",
+  "beats": [
+    {
+      "primitive": "title",
+      "dur": 5,
+      "say": "Does sugar make kids hyperactive?",
+      "data": {
+        "kicker": "Myth vs evidence",
+        "lines": [
+          "Does sugar make",
+          "kids hyper?"
+        ]
+      }
+    },
+    {
+      "primitive": "compare",
+      "dur": 9,
+      "say": "In double-blind trials, kids given sugar behaved no differently from kids given a placebo.",
+      "data": {
+        "title": "Behavior in blind trials",
+        "items": [
+          {
+            "label": "Sugar",
+            "value": 0.5,
+            "tone": "dim"
+          },
+          {
+            "label": "Placebo",
+            "value": 0.5,
+            "tone": "dim"
+          }
+        ],
+        "note": [
+          "No measurable difference",
+          "Wolraich et al., 1995"
+        ]
+      }
+    },
+    {
+      "primitive": "flow",
+      "dur": 11,
+      "say": "What does change things is expectation. Parents told their child had sugar saw more hyperactivity, even when there wasn't any sugar.",
+      "data": {
+        "steps": [
+          {
+            "t": "Parent told: sugar",
+            "s": "Actually sugar-free"
+          },
+          {
+            "t": "Expects hyperactivity",
+            "s": "Watches closely"
+          },
+          {
+            "t": "Hovers and criticizes",
+            "s": "Changes the dynamic"
+          },
+          {
+            "t": "Sees hyperactivity",
+            "s": "That wasn't there"
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "recall",
+      "dur": 6,
+      "say": "In blind trials, what effect did sugar have on kids' behavior?",
+      "data": {
+        "question": "In blind trials, what effect did sugar have on kids' behavior?",
+        "answer": "No measurable effect. Expectations shaped what parents saw."
+      }
+    }
+  ]
+}

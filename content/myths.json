@@ -1,0 +1,182 @@
+[
+  {
+    "id": "vent",
+    "short": "Venting",
+    "strength": "Strong",
+    "source": "Kjærvik & Bushman, 2024",
+    "clicks": [
+      {
+        "t": "Venting feeds anger",
+        "b": "Ranting or hitting a pillow feels like letting off steam, but it tends to keep anger going. Earlier experiments found people who vented by hitting a punching bag ended up angrier and more aggressive. A 2024 meta-analysis found arousal-raising outlets didn't reliably reduce anger.",
+        "y": "Next time you're angry, skip the rant and notice what happens."
+      },
+      {
+        "t": "Turn the volume down",
+        "b": "What does reduce anger is lowering your body's arousal: slow breathing, muscle relaxation, mindfulness, or simply waiting. Calming activities reduced anger across many settings in the 2024 meta-analysis. Anger runs on arousal, so cool the body and the feeling follows.",
+        "y": "Take four slow breaths before replying to something that angers you."
+      }
+    ]
+  },
+  {
+    "id": "money",
+    "short": "Money and happiness",
+    "strength": "Strong",
+    "source": "Killingsworth, Kahneman & Mellers, 2023",
+    "clicks": [
+      {
+        "t": "The $75k plateau, revisited",
+        "b": "A famous 2010 study by Kahneman and Deaton suggested day-to-day happiness stopped rising around $75,000 a year. Matthew Killingsworth's later data found it kept rising. In 2023 the researchers worked together to reconcile the conflict instead of arguing past each other.",
+        "y": "Ask which belief about money you picked up from a headline."
+      },
+      {
+        "t": "Who actually plateaus",
+        "b": "Their joint analysis found that for most people, well-being keeps rising with income, with smaller gains per extra dollar. The plateau appears mainly in the least happy group, roughly the bottom fifth, where more money stops easing distress past a point.",
+        "y": "Ask what more income would buy you: time, security, or stuff."
+      }
+    ]
+  },
+  {
+    "id": "ties",
+    "short": "Weak ties",
+    "strength": "Strong",
+    "source": "Granovetter, 1973; Rajkumar et al., 2022",
+    "clicks": [
+      {
+        "t": "The strength of weak ties",
+        "b": "Sociologist Mark Granovetter found that people often heard about jobs through acquaintances rather than close friends. Close friends tend to know what you know. Acquaintances connect you to other circles, where new information and openings live.",
+        "y": "List three acquaintances outside your usual circles."
+      },
+      {
+        "t": "Not too weak, not too strong",
+        "b": "A 2022 study in Science tested this with about 20 million LinkedIn users through randomized changes to connection suggestions. Moderately weak ties, people with only a few mutual connections, led to the most job moves. Very weak and very strong ties helped less.",
+        "y": "Reconnect with one former teammate you haven't talked to in a year."
+      }
+    ]
+  },
+  {
+    "id": "office",
+    "short": "Open offices",
+    "strength": "Moderate",
+    "source": "Bernstein & Turban, 2018",
+    "clicks": [
+      {
+        "t": "Open plans, closed mouths",
+        "b": "When two companies moved to open-plan offices, sensor badges showed face-to-face interaction dropped by roughly 70 percent, while email and messaging went up. People protected their privacy by putting on headphones and looking busy instead of talking.",
+        "y": "Notice whether you message a nearby colleague instead of talking."
+      },
+      {
+        "t": "Why it's rated moderate",
+        "b": "The method is strong because it used sensors instead of surveys. But it covered only two companies, so it may not generalize. The useful takeaway: removing walls doesn't create collaboration on its own. Norms and quiet places to focus matter as much as layout.",
+        "y": "Book a room for your next real conversation instead of chatting across desks."
+      }
+    ]
+  },
+  {
+    "id": "brainstorm",
+    "short": "Brainstorming",
+    "strength": "Strong",
+    "source": "Diehl & Stroebe, 1987",
+    "clicks": [
+      {
+        "t": "Groups brainstorm worse",
+        "b": "Groups brainstorming out loud usually produce fewer ideas than the same number of people working alone and then pooling their lists. A main cause is production blocking: while one person talks, everyone else waits and forgets. Worry about being judged adds to it.",
+        "y": "Count how many ideas you lose waiting your turn in the next meeting."
+      },
+      {
+        "t": "Alone, then together",
+        "b": "Brainwriting fixes this. Everyone writes ideas silently first, then the group combines, builds on, and selects from them. You get the volume of solo thinking plus the judgment of the group, without the bottleneck of one speaker at a time.",
+        "y": "Open your next team session with five silent minutes of writing."
+      }
+    ]
+  },
+  {
+    "id": "styles",
+    "short": "Learning styles",
+    "strength": "Strong",
+    "source": "Pashler et al., 2008",
+    "clicks": [
+      {
+        "t": "Learning styles don't match up",
+        "b": "Many people believe they're visual, auditory or hands-on learners and learn best when teaching matches that style. A 2008 review by Pashler and colleagues found very few studies designed to test this properly, and the ones that were didn't show a benefit from matching.",
+        "y": "Drop the label and ask what format fits this topic."
+      },
+      {
+        "t": "Visuals help everyone",
+        "b": "Pairing words with relevant diagrams or pictures tends to help nearly all learners, an idea known as dual coding. The best format depends on the content: a map for places, a diagram for a system, a timeline for history, words for an argument.",
+        "y": "Sketch a diagram of something you're learning this week."
+      }
+    ]
+  },
+  {
+    "id": "sugar",
+    "short": "Sugar and kids",
+    "strength": "Strong",
+    "source": "Wolraich et al., 1995",
+    "clicks": [
+      {
+        "t": "Sugar doesn't make kids hyper",
+        "b": "A 1995 meta-analysis of double-blind trials found sugar didn't measurably affect children's behavior or thinking. Kids at birthday parties are wound up by the party itself: friends, excitement, and a break from routine.",
+        "y": "Next party, notice what else is going on besides the cake."
+      },
+      {
+        "t": "Expectation changes what we see",
+        "b": "In one experiment, mothers were told their sons had eaten sugar, though the drink was sugar-free. Those mothers rated their sons as more hyperactive, and they hovered and criticized more. Believing in an effect can make you see it.",
+        "y": "Spot one belief that shapes how you read someone's behavior."
+      }
+    ]
+  },
+  {
+    "id": "hours",
+    "short": "10,000 hours",
+    "strength": "Strong",
+    "source": "Macnamara, Hambrick & Oswald, 2014",
+    "clicks": [
+      {
+        "t": "10,000 hours is a misreading",
+        "b": "The 10,000-hour rule was popularized from Anders Ericsson's research on violinists. Ericsson objected to it: 10,000 was an average, not a threshold, and the key was deliberate practice aimed at weaknesses with feedback, not hours alone.",
+        "y": "Name the one weakness your practice should target next."
+      },
+      {
+        "t": "Practice explains less than you think",
+        "b": "A 2014 meta-analysis found deliberate practice explained about a quarter of performance differences in games, about a fifth in music, somewhat less in sports, and very little in professions. Practice matters, but aptitude, starting age and fit matter too.",
+        "y": "Pick a field where your fit gives practice more leverage."
+      }
+    ]
+  },
+  {
+    "id": "fantasy",
+    "short": "Positive fantasies",
+    "strength": "Moderate",
+    "source": "Gabriele Oettingen's research",
+    "clicks": [
+      {
+        "t": "Dreaming can drain drive",
+        "b": "Psychologist Gabriele Oettingen found that people who indulged in vivid positive fantasies about a goal often put in less effort and achieved less. The fantasy can feel like progress, so the mind relaxes before the work is done. Effects vary across studies, so treat it as likely, not certain.",
+        "y": "Notice when imagining a win replaces working toward it."
+      },
+      {
+        "t": "Mental contrasting",
+        "b": "A better approach pairs the wish with its obstacle. Picture the outcome, then the main thing inside you that could block it, then plan: if that obstacle shows up, I'll do this. Oettingen's structured version is called WOOP: Wish, Outcome, Obstacle, Plan.",
+        "y": "Run WOOP on one goal for this week."
+      }
+    ]
+  },
+  {
+    "id": "choice",
+    "short": "Choice overload",
+    "strength": "Moderate",
+    "source": "Scheibehenne, Greifeneder & Todd, 2010",
+    "clicks": [
+      {
+        "t": "The jam study, revisited",
+        "b": "In a famous 2000 study, shoppers saw either 24 or 6 jams. More people stopped at the big display, but more bought from the small one. It became the classic example of choice overload: too many options and people freeze.",
+        "y": "Recall a time you stalled on a choice. How many options were there?"
+      },
+      {
+        "t": "Smaller than the legend",
+        "b": "A 2010 meta-analysis found the average choice-overload effect across many studies was close to zero. It does show up under specific conditions, like complex options, unclear preferences or time pressure. More options aren't automatically paralyzing.",
+        "y": "When a choice stalls you, check which condition is in play."
+      }
+    ]
+  }
+]

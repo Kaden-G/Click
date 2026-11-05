@@ -1,0 +1,79 @@
+{
+  "id": "myth-fantasy-1",
+  "title": "Positive fantasies",
+  "strength": "Moderate",
+  "beats": [
+    {
+      "primitive": "title",
+      "dur": 5,
+      "say": "Does picturing success help you achieve it?",
+      "data": {
+        "kicker": "Myth vs evidence",
+        "lines": [
+          "Should you",
+          "picture success?"
+        ]
+      }
+    },
+    {
+      "primitive": "split",
+      "dur": 11,
+      "say": "Vivid positive fantasies can drain motivation because they feel like progress. Pairing the goal with its obstacle tends to work better.",
+      "data": {
+        "title": "Two ways to picture a goal",
+        "left": {
+          "label": "Positive fantasy",
+          "rows": [
+            "Picture the win",
+            "Feel relaxed",
+            "Effort drops"
+          ],
+          "tone": "dim"
+        },
+        "right": {
+          "label": "Mental contrasting",
+          "rows": [
+            "Picture the win",
+            "Name the obstacle",
+            "Plan if-then"
+          ],
+          "tone": "rev"
+        }
+      }
+    },
+    {
+      "primitive": "flow",
+      "dur": 9,
+      "say": "Gabriele Oettingen's method is called WOOP: wish, outcome, obstacle, plan.",
+      "data": {
+        "steps": [
+          {
+            "t": "Wish",
+            "s": "What you want"
+          },
+          {
+            "t": "Outcome",
+            "s": "The best result"
+          },
+          {
+            "t": "Obstacle",
+            "s": "What inside you blocks it"
+          },
+          {
+            "t": "Plan",
+            "s": "If obstacle, then action"
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "recall",
+      "dur": 6,
+      "say": "What do the letters in WOOP stand for?",
+      "data": {
+        "question": "What do the letters in WOOP stand for?",
+        "answer": "Wish, Outcome, Obstacle, Plan."
+      }
+    }
+  ]
+}

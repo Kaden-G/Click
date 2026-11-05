@@ -1,0 +1,82 @@
+{
+  "id": "myth-hours-1",
+  "title": "10,000 hours",
+  "strength": "Strong",
+  "beats": [
+    {
+      "primitive": "title",
+      "dur": 5,
+      "say": "Do ten thousand hours of practice make anyone an expert?",
+      "data": {
+        "kicker": "Myth vs evidence",
+        "lines": [
+          "Is 10,000 hours",
+          "the magic number?"
+        ]
+      }
+    },
+    {
+      "primitive": "intervals",
+      "dur": 12,
+      "say": "A 2014 meta-analysis measured how much deliberate practice explains. About a quarter of the differences in games, about a fifth in music, less in sports, and very little in education and professions.",
+      "data": {
+        "title": "Share explained by practice",
+        "max": 30,
+        "unit": "%",
+        "items": [
+          {
+            "label": "Games",
+            "value": 26
+          },
+          {
+            "label": "Music",
+            "value": 21
+          },
+          {
+            "label": "Sports",
+            "value": 18
+          },
+          {
+            "label": "Education",
+            "value": 4
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "split",
+      "dur": 10,
+      "say": "And hours alone aren't the point. Ericsson's research was about deliberate practice: targeting weaknesses with feedback.",
+      "data": {
+        "title": "Hours vs deliberate practice",
+        "left": {
+          "label": "Just hours",
+          "rows": [
+            "Repeat what you know",
+            "Little feedback",
+            "Plateau"
+          ],
+          "tone": "dim"
+        },
+        "right": {
+          "label": "Deliberate practice",
+          "rows": [
+            "Target a weakness",
+            "Fast feedback",
+            "Keep stretching"
+          ],
+          "tone": "rev"
+        }
+      }
+    },
+    {
+      "primitive": "recall",
+      "dur": 6,
+      "say": "Roughly how much of the differences in music did practice explain?",
+      "data": {
+        "question": "Roughly how much of the differences in music did practice explain?",
+        "answer": "About a fifth. Practice matters, but it isn't the whole story."
+      }
+    }
+  ]
+}
