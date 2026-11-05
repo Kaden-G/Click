@@ -9,7 +9,8 @@ Ideas that click, and stick. A personal learning feed: bite-sized idea cards, sh
 | `src/index.html` | The app: clip renderer, feed, review, interview |
 | `content/books.json` | 50 clicks from 10 books (2016–2024) |
 | `content/myths.json` | 20 clicks testing 10 common beliefs, each with an evidence-strength rating |
-| `clips/*.json` | One Scene Script per clip (23) |
+| `content/wrong.json` | 20 things people commonly get wrong: government, numbers and money, tech and everyday |
+| `clips/*.json` | One Scene Script per clip (29) |
 | `spec/scene-script.md` | The Scene Script format and its rules |
 | `build.py` | Inlines content and clips into `dist/index.html` |
 | `tests/` | Headless browser checks for the feed and the interview |
@@ -20,6 +21,7 @@ Ideas that click, and stick. A personal learning feed: bite-sized idea cards, sh
 python3 build.py              # writes dist/index.html
 node tests/feed.test.js       # predict, reveal, review, grade, clip recall
 node tests/interview.test.js  # offline and simulated-AI interviews
+node tests/clips.test.js      # every Scene Script validates and renders
 ```
 
 Tests need Node and Playwright with Chromium.

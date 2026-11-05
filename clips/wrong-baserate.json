@@ -1,0 +1,84 @@
+{
+  "id": "wrong-baserate",
+  "title": "Base rates",
+  "beats": [
+    {
+      "primitive": "title",
+      "dur": 6,
+      "say": "A test is ninety-nine percent accurate, and you test positive. How worried should you be?",
+      "data": {
+        "kicker": "Things people get wrong",
+        "lines": [
+          "99% accurate.",
+          "Still probably fine."
+        ]
+      }
+    },
+    {
+      "primitive": "grid",
+      "dur": 10,
+      "say": "Imagine a thousand people, and a condition only one of them has.",
+      "data": {
+        "title": "1,000 people tested",
+        "total": 1000,
+        "cols": 40,
+        "filled": 0,
+        "highlight": [
+          0
+        ],
+        "note": "1 in 1,000 has it",
+        "legend": [
+          {
+            "tone": "mem",
+            "label": "Has the condition"
+          },
+          {
+            "tone": "empty",
+            "label": "Healthy"
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "intervals",
+      "dur": 12,
+      "say": "The test catches the one real case. But it also wrongly flags one percent of the healthy people. That's about ten false alarms.",
+      "data": {
+        "title": "Who tests positive",
+        "max": 10,
+        "unit": "",
+        "items": [
+          {
+            "label": "Sick",
+            "value": 1
+          },
+          {
+            "label": "Healthy",
+            "value": 10
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "title",
+      "dur": 9,
+      "say": "So of about eleven positive results, only one is real. A positive means roughly a nine percent chance you're sick. That's why positive screens get a second test.",
+      "data": {
+        "kicker": "1 real of about 11 positives",
+        "lines": [
+          "About 9%,",
+          "not 99%"
+        ]
+      }
+    },
+    {
+      "primitive": "recall",
+      "dur": 7,
+      "say": "Rare condition, 99%-accurate test, you test positive. Roughly what are your odds of being sick here?",
+      "data": {
+        "question": "Rare condition, 99%-accurate test, you test positive. Roughly what are your odds of being sick here?",
+        "answer": "About 9 percent, because false positives outnumber true ones."
+      }
+    }
+  ]
+}

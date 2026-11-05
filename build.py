@@ -20,7 +20,7 @@ def js(value):
 
 
 def main():
-    books, myths = load("content/books.json"), load("content/myths.json")
+    books, myths, wrong = load("content/books.json"), load("content/myths.json"), load("content/wrong.json")
     clips = {}
     for f in sorted((ROOT / "clips").glob("*.json")):
         c = json.loads(f.read_text(encoding="utf-8"))
@@ -34,14 +34,14 @@ def main():
     html = (ROOT / "src/index.html").read_text(encoding="utf-8")
     for token, value in {
         "/*@EXAMPLE*/null": example, "/*@CLIPS*/{}": clips,
-        "/*@MYTHS*/[]": myths, "/*@BOOKS*/[]": books,
+        "/*@MYTHS*/[]": myths, "/*@WRONG*/[]": wrong, "/*@BOOKS*/[]": books,
     }.items():
         if html.count(token) != 1:
             sys.exit(f"src/index.html: expected one {token}")
         html = html.replace(token, js(value))
     (ROOT / "dist").mkdir(exist_ok=True)
     (ROOT / "dist/index.html").write_text(html, encoding="utf-8")
-    cards = sum(len(b["clicks"]) for b in books) + sum(len(m["clicks"]) for m in myths)
+    cards = sum(len(b["clicks"]) for b in books) + sum(len(m["clicks"]) for m in myths) + len(wrong)
     print(f"dist/index.html: {cards} cards, {len(clips) + 1} clips")
 
 

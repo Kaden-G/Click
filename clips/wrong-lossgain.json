@@ -1,0 +1,79 @@
+{
+  "id": "wrong-lossgain",
+  "title": "The 50% loss trap",
+  "beats": [
+    {
+      "primitive": "title",
+      "dur": 5,
+      "say": "You lose fifty percent, then gain fifty percent. Are you back to even?",
+      "data": {
+        "kicker": "Things people get wrong",
+        "lines": [
+          "Down 50%,",
+          "up 50%"
+        ]
+      }
+    },
+    {
+      "primitive": "intervals",
+      "dur": 10,
+      "say": "Start with a hundred dollars. Lose half, and you have fifty. Gain fifty percent on that, and you're at seventy-five.",
+      "data": {
+        "title": "$100 through a drop and a rebound",
+        "max": 100,
+        "unit": "",
+        "items": [
+          {
+            "label": "Start",
+            "value": 100
+          },
+          {
+            "label": "−50%",
+            "value": 50
+          },
+          {
+            "label": "+50%",
+            "value": 75
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "intervals",
+      "dur": 11,
+      "say": "The deeper the loss, the bigger the gain you need. A fifty percent drop needs a hundred percent gain. A seventy-five percent drop needs three hundred.",
+      "data": {
+        "title": "Gain needed to recover",
+        "max": 300,
+        "unit": "%",
+        "items": [
+          {
+            "label": "−10%",
+            "value": 11
+          },
+          {
+            "label": "−25%",
+            "value": 33
+          },
+          {
+            "label": "−50%",
+            "value": 100
+          },
+          {
+            "label": "−75%",
+            "value": 300
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "recall",
+      "dur": 6,
+      "say": "Your investment drops 50 percent. What gain gets you back to even?",
+      "data": {
+        "question": "Your investment drops 50 percent. What gain gets you back to even?",
+        "answer": "100 percent."
+      }
+    }
+  ]
+}

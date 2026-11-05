@@ -1,0 +1,100 @@
+{
+  "id": "wrong-montyhall",
+  "title": "Monty Hall",
+  "beats": [
+    {
+      "primitive": "title",
+      "dur": 5,
+      "say": "Three doors. One hides a prize. You pick one. Should you switch?",
+      "data": {
+        "kicker": "Things people get wrong",
+        "lines": [
+          "Switch",
+          "or stay?"
+        ]
+      }
+    },
+    {
+      "primitive": "grid",
+      "dur": 9,
+      "say": "Your first pick is right one time in three. The other two doors, together, hold the other two in three.",
+      "data": {
+        "title": "Your first pick",
+        "total": 3,
+        "cols": 3,
+        "filled": 0,
+        "highlight": [
+          0
+        ],
+        "note": "Before the host acts",
+        "legend": [
+          {
+            "tone": "mem",
+            "label": "Your pick: 1 in 3"
+          },
+          {
+            "tone": "empty",
+            "label": "Other two: 2 in 3 together"
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "flow",
+      "dur": 10,
+      "say": "Now the host, who knows where the prize is, opens a losing door from the other two. That two in three chance doesn't vanish. It moves to the one door left.",
+      "data": {
+        "steps": [
+          {
+            "t": "You pick",
+            "s": "Right 1 time in 3"
+          },
+          {
+            "t": "Host opens a loser",
+            "s": "He always can"
+          },
+          {
+            "t": "Two in three remains",
+            "s": "On the last door"
+          },
+          {
+            "t": "Switch",
+            "s": "Win 2 times in 3"
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "compare",
+      "dur": 8,
+      "say": "Staying wins a third of the time. Switching wins two thirds.",
+      "data": {
+        "title": "Chance of winning",
+        "items": [
+          {
+            "label": "Stay",
+            "value": 0.333,
+            "tone": "dim"
+          },
+          {
+            "label": "Switch",
+            "value": 0.667,
+            "tone": "mem"
+          }
+        ],
+        "note": [
+          "Exact probabilities"
+        ]
+      }
+    },
+    {
+      "primitive": "recall",
+      "dur": 6,
+      "say": "In Monty Hall, how often does switching win?",
+      "data": {
+        "question": "In Monty Hall, how often does switching win?",
+        "answer": "Two times in three, because the host's choice isn't random."
+      }
+    }
+  ]
+}

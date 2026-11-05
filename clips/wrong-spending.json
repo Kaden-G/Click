@@ -1,0 +1,102 @@
+{
+  "id": "wrong-spending",
+  "title": "Where federal money goes",
+  "beats": [
+    {
+      "primitive": "title",
+      "dur": 5,
+      "say": "Does Congress vote on most federal spending every year?",
+      "data": {
+        "kicker": "Things people get wrong",
+        "lines": [
+          "Who decides",
+          "federal spending?"
+        ]
+      }
+    },
+    {
+      "primitive": "grid",
+      "dur": 12,
+      "say": "Here's the 2025 budget, one dot per percent. Only about twenty-seven percent is set in the annual spending bills. The rest runs on existing law, or pays interest on the debt.",
+      "data": {
+        "title": "$7.0 trillion, fiscal 2025",
+        "total": 100,
+        "cols": 10,
+        "filled": 27,
+        "fillTone": "rev",
+        "note": "CBO · one dot ≈ 1%",
+        "legend": [
+          {
+            "tone": "rev",
+            "label": "Voted on each year (27%)"
+          },
+          {
+            "tone": "empty",
+            "label": "Mandatory and interest (74%)"
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "grid",
+      "dur": 10,
+      "say": "And foreign aid, which people often guess is a quarter of the budget? About one dot.",
+      "data": {
+        "title": "Foreign aid, to scale",
+        "total": 100,
+        "cols": 10,
+        "filled": 27,
+        "fillTone": "rev",
+        "highlight": [
+          0
+        ],
+        "note": "About 1% of spending",
+        "legend": [
+          {
+            "tone": "mem",
+            "label": "Foreign aid (about 1%)"
+          },
+          {
+            "tone": "rev",
+            "label": "Rest of annual spending"
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "split",
+      "dur": 9,
+      "say": "The big drivers are Social Security, health programs, and interest. That's where the real budget debates are.",
+      "data": {
+        "title": "Belief vs budget",
+        "left": {
+          "label": "Common belief",
+          "rows": [
+            "Aid is ~25%",
+            "Congress sets most",
+            "Cut aid, fix deficit"
+          ],
+          "tone": "dim"
+        },
+        "right": {
+          "label": "The budget",
+          "rows": [
+            "Aid is ~1%",
+            "~27% voted yearly",
+            "Big drivers: Social Security, health, interest"
+          ],
+          "tone": "rev"
+        }
+      }
+    },
+    {
+      "primitive": "recall",
+      "dur": 6,
+      "say": "About what share of federal spending does Congress set each year?",
+      "data": {
+        "question": "About what share of federal spending does Congress set each year?",
+        "answer": "About 27 percent. Most is mandatory spending and interest."
+      }
+    }
+  ]
+}

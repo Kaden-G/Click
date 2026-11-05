@@ -1,0 +1,98 @@
+{
+  "id": "wrong-tax",
+  "title": "Tax brackets",
+  "beats": [
+    {
+      "primitive": "title",
+      "dur": 5,
+      "say": "Can a raise that bumps you into a higher tax bracket lower your take-home pay?",
+      "data": {
+        "kicker": "Things people get wrong",
+        "lines": [
+          "Can a raise",
+          "cost you?"
+        ]
+      }
+    },
+    {
+      "primitive": "intervals",
+      "dur": 12,
+      "say": "Take a sixty thousand dollar income under simple, made-up brackets. Ten percent on the first twenty thousand, fifteen on the next thirty, twenty-five on the last ten.",
+      "data": {
+        "title": "Tax by bracket, $60k income",
+        "max": 4500,
+        "unit": "",
+        "items": [
+          {
+            "label": "10%",
+            "value": 2000
+          },
+          {
+            "label": "15%",
+            "value": 4500
+          },
+          {
+            "label": "25%",
+            "value": 2500
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "compare",
+      "dur": 9,
+      "say": "The top rate is twenty-five percent, but the tax works out to nine thousand dollars. That's fifteen percent of the whole income.",
+      "data": {
+        "title": "Top rate vs effective rate",
+        "items": [
+          {
+            "label": "Top rate",
+            "value": 0.25,
+            "tone": "dim"
+          },
+          {
+            "label": "Effective",
+            "value": 0.15,
+            "tone": "mem"
+          }
+        ],
+        "note": [
+          "Simplified brackets, not current law"
+        ]
+      }
+    },
+    {
+      "primitive": "split",
+      "dur": 9,
+      "say": "So the higher rate only touches the dollars above each line. A raise always leaves you with more after federal income tax.",
+      "data": {
+        "title": "Myth vs math",
+        "left": {
+          "label": "Myth",
+          "rows": [
+            "Whole income taxed higher",
+            "A raise can backfire"
+          ],
+          "tone": "dim"
+        },
+        "right": {
+          "label": "Math",
+          "rows": [
+            "Only dollars above the line",
+            "A raise always nets more"
+          ],
+          "tone": "rev"
+        }
+      }
+    },
+    {
+      "primitive": "recall",
+      "dur": 6,
+      "say": "You get a raise into a higher bracket. Which dollars get the higher rate?",
+      "data": {
+        "question": "You get a raise into a higher bracket. Which dollars get the higher rate?",
+        "answer": "Only the dollars above the threshold."
+      }
+    }
+  ]
+}

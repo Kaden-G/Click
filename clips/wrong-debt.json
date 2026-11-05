@@ -1,0 +1,82 @@
+{
+  "id": "wrong-debt",
+  "title": "Who holds the debt",
+  "beats": [
+    {
+      "primitive": "title",
+      "dur": 5,
+      "say": "Does China own most of America's debt?",
+      "data": {
+        "kicker": "Things people get wrong",
+        "lines": [
+          "Does China own",
+          "our debt?"
+        ]
+      }
+    },
+    {
+      "primitive": "grid",
+      "dur": 12,
+      "say": "Here's the federal debt held by the public, one dot per percent. Foreign holders own about thirty-one. China, about two.",
+      "data": {
+        "title": "Debt held by the public",
+        "total": 100,
+        "cols": 10,
+        "filled": 31,
+        "fillTone": "rev",
+        "highlight": [
+          0,
+          1
+        ],
+        "note": "CRS · data as of Dec 2025",
+        "legend": [
+          {
+            "tone": "mem",
+            "label": "China (about 2%)"
+          },
+          {
+            "tone": "rev",
+            "label": "Other foreign holders"
+          },
+          {
+            "tone": "empty",
+            "label": "Held in the U.S."
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "split",
+      "dur": 8,
+      "say": "Most of the debt is owned at home, by investors, banks, funds, and the Federal Reserve.",
+      "data": {
+        "title": "Who owns it",
+        "left": {
+          "label": "The myth",
+          "rows": [
+            "China holds most",
+            "Foreigners control it"
+          ],
+          "tone": "dim"
+        },
+        "right": {
+          "label": "The data",
+          "rows": [
+            "Mostly domestic",
+            "China ~2%, falling"
+          ],
+          "tone": "rev"
+        }
+      }
+    },
+    {
+      "primitive": "recall",
+      "dur": 6,
+      "say": "Roughly what share of U.S. public debt does China hold?",
+      "data": {
+        "question": "Roughly what share of U.S. public debt does China hold?",
+        "answer": "About 2 percent. Foreign holders own about 31 percent in total."
+      }
+    }
+  ]
+}

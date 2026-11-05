@@ -1,0 +1,162 @@
+[
+  {
+    "id": "aid",
+    "cat": "Government",
+    "source": "KFF polling; federal budget data",
+    "t": "How much of the federal budget goes to foreign aid?",
+    "b": "About 1 percent. In KFF surveys, Americans guess around a quarter on average. The myth sticks because fights over aid get headlines out of proportion to its size, and because billions sounds enormous until you set it against a federal budget of about $7 trillion.",
+    "y": "Before reacting to a spending number, ask what share of the total it is."
+  },
+  {
+    "id": "spending",
+    "cat": "Government",
+    "source": "CBO, fiscal 2025",
+    "t": "Does Congress vote on most federal spending each year?",
+    "b": "No. In fiscal 2025, about 27 percent of the $7.0 trillion budget went through annual appropriations. About 60 percent was mandatory spending, like Social Security, Medicare and Medicaid, which flows automatically under existing law. About 14 percent was interest on the debt. Shutdown fights are over the smaller slice.",
+    "y": "Next budget headline, check whether it's about discretionary or mandatory spending."
+  },
+  {
+    "id": "debt",
+    "cat": "Government",
+    "source": "CRS, April 2026 (data as of Dec 2025)",
+    "t": "Does China own most of America's debt?",
+    "b": "No. As of December 2025, foreign holders owned about 31 percent of federal debt held by the public. China held about 7 percent of that foreign share, roughly 2 percent of the total, and its holdings have been falling. Most of the debt is owned at home: investors, banks, funds, state governments and the Federal Reserve.",
+    "y": "Look up who the largest foreign holder is today. It isn't China."
+  },
+  {
+    "id": "socialsecurity",
+    "cat": "Government",
+    "source": "2026 Social Security Trustees Report",
+    "t": "Will Social Security run out of money and stop paying?",
+    "b": "Not to zero. The 2026 Trustees Report projects the combined trust funds run out in 2034. After that, payroll taxes still coming in would cover about 83 percent of scheduled benefits unless Congress changes the law. 'Running out' refers to the reserve, not the program. A cut that size would still be large, which is why the date matters.",
+    "y": "When you hear 'bankrupt,' ask what share would still get paid."
+  },
+  {
+    "id": "congress-ss",
+    "cat": "Government",
+    "source": "FactCheck.org; Snopes",
+    "t": "Are members of Congress exempt from Social Security?",
+    "b": "No. Members have paid Social Security payroll taxes since 1984, after a 1983 law brought them and other new federal employees into the system. Viral posts claiming otherwise have circulated for decades. Fact-checkers have also debunked related claims, like members getting a full-salary pension after a single term.",
+    "y": "Before sharing a viral claim about Congress, search it with the words 'fact check'."
+  },
+  {
+    "id": "firstamendment",
+    "cat": "Government",
+    "source": "U.S. Constitution, First Amendment",
+    "t": "Does the First Amendment protect you from being fired for what you say?",
+    "b": "Not from a private employer. The First Amendment limits what the government can do to punish speech. Private companies and platforms can generally set their own rules, though some state laws and labor protections add limits. Public employees get some First Amendment protection, because their employer is the government.",
+    "y": "Ask 'who is restricting the speech?' before deciding whether the First Amendment applies."
+  },
+  {
+    "id": "citizensunited",
+    "cat": "Government",
+    "source": "Citizens United v. FEC (2010); SpeechNow.org v. FEC (2010)",
+    "t": "Did Citizens United let corporations give unlimited money to candidates?",
+    "b": "No. Corporations still can't donate directly to federal candidates. The 2010 ruling said the government can't ban independent political spending by corporations and unions. A later appeals court decision opened the door to super PACs, which can raise unlimited sums but can't coordinate with campaigns.",
+    "y": "When you see a campaign-money claim, check: direct contribution, or independent spending?"
+  },
+  {
+    "id": "executiveorders",
+    "cat": "Government",
+    "source": "U.S. Constitution, Article II; Congressional Research Service",
+    "t": "Can a president make any law by executive order?",
+    "b": "No. An executive order directs the executive branch, and it has to rest on authority from the Constitution or a law Congress passed. Courts can block orders that go beyond that authority, Congress can pass laws that override them, and the next president can revoke them with a new order.",
+    "y": "When an order makes news, look for which law or constitutional power it cites."
+  },
+  {
+    "id": "miranda",
+    "cat": "Government",
+    "source": "Miranda v. Arizona (1966)",
+    "t": "If police don't read your Miranda rights, is the case thrown out?",
+    "b": "Usually not. Miranda warnings are required before questioning someone who is in custody, not at the moment of arrest. If police skip them, the usual remedy is that statements from that questioning can't be used as evidence, and the case can continue on other evidence. TV arrests made the cuffs feel like the trigger.",
+    "y": "Remember the two triggers: custody and questioning."
+  },
+  {
+    "id": "filibuster",
+    "cat": "Government",
+    "source": "U.S. Senate rules",
+    "t": "Is the filibuster in the Constitution?",
+    "b": "No. It's a Senate rule. Ending debate on most bills takes 60 votes under the cloture rule, but the Senate can change its own rules, and it has narrowed the filibuster before, for most nominations in 2013 and Supreme Court nominations in 2017. The House has no equivalent.",
+    "y": "Ask whether a political roadblock comes from the Constitution, a law, or a chamber's own rules."
+  },
+  {
+    "id": "baserate",
+    "cat": "Numbers and money",
+    "source": "Bayes' theorem",
+    "t": "A test is 99% accurate and you test positive. Are you 99% likely to be sick?",
+    "b": "Not necessarily. It depends on how rare the condition is. If 1 in 1,000 people has it and the test wrongly flags 1 percent of healthy people, about 10 false positives show up for every true one. A positive result then means roughly a 9 percent chance you're sick. That's why positive screens get a second test.",
+    "y": "When a test or alert fires, ask how rare the thing is before you trust it."
+  },
+  {
+    "id": "montyhall",
+    "cat": "Numbers and money",
+    "source": "Probability; Marilyn vos Savant (1990)",
+    "t": "In the Monty Hall problem, does switching doors matter?",
+    "b": "Yes. Switching wins two-thirds of the time. Your first pick is right only 1 in 3 times. The host knows where the prize is and always opens a losing door, so the remaining door carries the other 2-in-3 chance. It feels like 50-50 because two doors are left, but the host's choice wasn't random.",
+    "y": "Try it with three playing cards and a friend: ten rounds staying, ten switching."
+  },
+  {
+    "id": "gambler",
+    "cat": "Numbers and money",
+    "source": "Probability",
+    "t": "After five reds in a row, is black due?",
+    "b": "No. A roulette wheel has no memory, so each spin has the same odds as the last. Streaks feel meaningful because we expect short runs to look balanced, but balance only shows up over very many spins. The same error shows up in investing and hiring, when people expect a run to reverse just because it's long.",
+    "y": "Before betting on a reversal, ask what would actually cause it."
+  },
+  {
+    "id": "tax",
+    "cat": "Numbers and money",
+    "source": "IRS",
+    "t": "Can a raise into a higher tax bracket lower your take-home pay?",
+    "b": "Not through federal income tax. Brackets are marginal: the higher rate applies only to the dollars above each threshold, not to your whole income. A raise always leaves you with more after federal income tax. Rare exceptions come from benefits that phase out at certain incomes, not from the brackets themselves.",
+    "y": "Find your marginal rate and your effective rate. They're different numbers."
+  },
+  {
+    "id": "lossgain",
+    "cat": "Numbers and money",
+    "source": "Arithmetic",
+    "t": "Does a 50% loss followed by a 50% gain get you back to even?",
+    "b": "No. $100 falls to $50, and a 50 percent gain on $50 only brings it to $75. You're down 25 percent. Losses take bigger gains to recover: a 50 percent drop needs a 100 percent gain. That's why deep drawdowns hurt long-term returns more than the average return suggests.",
+    "y": "For any loss, work out the gain needed to recover: loss divided by (1 minus loss)."
+  },
+  {
+    "id": "lumpsum",
+    "cat": "Numbers and money",
+    "source": "Vanguard (2012)",
+    "t": "Is easing a lump sum into the market the smarter move?",
+    "b": "Historically, usually not. Vanguard's 2012 study of US, UK and Australian markets found investing all at once beat spreading it over a year about two-thirds of the time, because markets rise more often than they fall. Averaging in mainly reduces regret if prices drop right after you invest. Investing each paycheck as it arrives is a different situation.",
+    "y": "With a lump sum, decide whether you're paying for returns or for peace of mind."
+  },
+  {
+    "id": "incognito",
+    "cat": "Tech and everyday",
+    "source": "Browser documentation; Brown v. Google settlement (2024)",
+    "t": "Does incognito mode make you anonymous?",
+    "b": "No. Private browsing stops your browser from saving history, cookies and form entries on your device after you close the window. The websites you visit, your employer or school network, and your internet provider can still see your activity. Google settled a lawsuit in 2024 over data collected while people browsed in incognito mode.",
+    "y": "Use incognito for a clean session, not for privacy from your network."
+  },
+  {
+    "id": "iphoneapps",
+    "cat": "Tech and everyday",
+    "source": "Apple Support",
+    "t": "Does closing iPhone apps save battery?",
+    "b": "No, according to Apple. Apps in the app switcher are mostly suspended, not running. Force-closing them means the phone has to fully relaunch them later, which can use more power. Apple recommends force-closing only an app that has frozen. Screen brightness, weak signal and background refresh drain far more.",
+    "y": "Open Settings, then Battery, to see what's actually using power."
+  },
+  {
+    "id": "steering",
+    "cat": "Tech and everyday",
+    "source": "NHTSA; AAA driver guidance",
+    "t": "Should you hold the steering wheel at 10 and 2?",
+    "b": "Current guidance says around 9 and 3, or slightly lower. With an airbag in the steering wheel, hands at 10 and 2 can be thrown toward your face when it deploys. The 10-and-2 habit dates from large wheels without power steering or airbags.",
+    "y": "On your next drive, notice where your hands sit and move them to 9 and 3."
+  },
+  {
+    "id": "missing",
+    "cat": "Tech and everyday",
+    "source": "FBI; National Child Search Assistance Act",
+    "t": "Do you have to wait 24 hours to report someone missing?",
+    "b": "No. There's no waiting period, and police generally urge people to report right away, especially for children, older adults or anyone at risk. The first hours matter most for finding someone. For missing children, federal law bars police from imposing a waiting period before taking a report.",
+    "y": "If someone may be missing, call local police now. Don't wait."
+  }
+]
