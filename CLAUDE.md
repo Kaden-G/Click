@@ -7,7 +7,7 @@ A personal learning feed: idea cards, narrated Scene Script clips, spaced review
 1. Edit content in `content/*.json`, clips in `clips/*.json`, or the app in `src/index.html`. Never edit `dist/index.html` by hand.
 2. `python3 build.py`
 3. `node tests/feed.test.js`, `node tests/interview.test.js` and `node tests/clips.test.js`; all must report no errors and no failing clips.
-4. Commit, then push to `origin main`.
+4. Commit, then push to `origin main`. After pushing, regenerate the portable bundle with `python3 tools/bundle.py` if it's needed.
 5. Republish `dist/index.html` to the existing artifact (https://claude.ai/artifact/2MVxPh4Q35i8eAhgqKR2XA) rather than creating a new one. It declares the `sample` capability; omit `capabilities` on republish to keep it.
 
 ## Content rules
@@ -16,7 +16,8 @@ A personal learning feed: idea cards, narrated Scene Script clips, spaced review
 - Every card ends with a `y` ("Try") line: one concrete action.
 - Research claims carry a source. Contested findings get a `flag` on the card; myth-style items carry `strength`: Strong, Moderate, or Weak.
 - Don't overstate. If evidence is mixed, the card says so.
-- New topic batches get their own chip in the feed and are interleaved into Mixed.
+- New topic batches go in `content/sets/<id>.json` (`id`, `name`, optional `prompt`, `cards[]` with `id`, `t`, `b`, `y`, optional `cat` and `source`). Each set gets its own chip and interview topic and is interleaved into Mixed. Card keys are `<set-id>-<card-id>`.
+- Never commit `content/private/` or `click.config.json`; they hold work material and endpoint settings.
 - Figures that change over time (budgets, debt, trust funds) name their source and date on the card.
 - Government and politics content sticks to how things work, sourced to official or nonpartisan data, and debunks myths from across the spectrum.
 

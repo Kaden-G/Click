@@ -1,3 +1,5 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Click</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -640,7 +642,7 @@ const CLIPS = /*@CLIPS*/{};
 
 <script>
 const MYTHS = /*@MYTHS*/[];
-const WRONG = /*@WRONG*/[];
+const SETS = /*@SETS*/[];
 </script>
 
 <script>
@@ -654,10 +656,12 @@ const BOOKS = /*@BOOKS*/[];
   for (const m of MYTHS) m.clicks.forEach((c, i) => myths.push({ ...c, myth: m, n: i + 1, of: m.clicks.length, key: "myth-" + m.id + "-" + (i + 1) }));
   bookCards.forEach((c, i) => { all.push(c); if (i % 3 === 2 && myths[(i - 2) / 3]) all.push(myths[(i - 2) / 3]); });
   myths.slice(Math.floor(bookCards.length / 3)).forEach(c => all.push(c));
-  const wrongCards = WRONG.map(w => ({ ...w, wrong: true, n: 1, of: 1, key: "wrong-" + w.id }));
+  const setCards = [];
+  const perSet = SETS.map(s => s.cards.map((c, i) => ({ ...c, set: s, n: i + 1, of: s.cards.length, key: s.id + "-" + c.id })));
+  for (let i = 0; perSet.some(a => i < a.length); i++) for (const a of perSet) if (a[i]) setCards.push(a[i]);
   const base = all.splice(0, all.length);
-  base.forEach((c, i) => { all.push(c); if (i % 4 === 3 && wrongCards[(i - 3) / 4]) all.push(wrongCards[(i - 3) / 4]); });
-  wrongCards.slice(Math.floor(base.length / 4)).forEach(c => all.push(c));
+  base.forEach((c, i) => { all.push(c); if (i % 4 === 3 && setCards[(i - 3) / 4]) all.push(setCards[(i - 3) / 4]); });
+  setCards.slice(Math.floor(base.length / 4)).forEach(c => all.push(c));
   const byKey = {};
   for (const c of all) byKey[c.key] = c;
 
@@ -683,7 +687,7 @@ const BOOKS = /*@BOOKS*/[];
   const dueCount = () => Object.keys(st.cards).filter(k => byKey[k] && st.cards[k].due <= now()).length;
   const snapReview = () => { reviewOrder = Object.keys(st.cards).filter(k => byKey[k]).sort((a, b) => st.cards[a].due - st.cards[b].due); };
   const list = () => filter === "review" ? reviewOrder.filter(inReview).map(k => byKey[k])
-    : filter === "all" ? all : filter === "myths" ? myths : filter === "wrong" ? wrongCards
+    : filter === "all" ? all : filter === "myths" ? myths : filter.startsWith("set-") ? setCards.filter(c => "set-" + c.set.id === filter)
     : bookCards.filter(c => c.book.id === filter).sort((a, b) => a.n - b.n);
   const days = n => n === 1 ? "1 day" : n + " days";
   const dueLabel = k => { const d = st.cards[k].due - now(); return d <= 0 ? "Due now" : "Due in " + days(Math.ceil(d / DAY)); };
@@ -701,7 +705,7 @@ const BOOKS = /*@BOOKS*/[];
     return msg;
   }
   window.clickHasCard = key => !!byKey[key];
-  window.clickCards = { all, bookCards, myths, wrongCards, byKey, reviewKeys: () => Object.keys(st.cards).filter(k => byKey[k]).sort((a, b) => st.cards[a].due - st.cards[b].due) };
+  window.clickCards = { all, bookCards, myths, setCards, byKey, reviewKeys: () => Object.keys(st.cards).filter(k => byKey[k]).sort((a, b) => st.cards[a].due - st.cards[b].due) };
   window.clickGrade = (key, got) => grade(key, got, null, "clip");
 
   function stats() {
@@ -718,7 +722,7 @@ const BOOKS = /*@BOOKS*/[];
 
   function chips() {
     const due = dueCount();
-    const opts = [{ id: "review", short: "Review" + (due ? " · " + due + " due" : "") }, { id: "all", short: "Mixed" }, { id: "myths", short: "Myths vs evidence" }, { id: "wrong", short: "Things people get wrong" }, ...BOOKS];
+    const opts = [{ id: "review", short: "Review" + (due ? " · " + due + " due" : "") }, { id: "all", short: "Mixed" }, { id: "myths", short: "Myths vs evidence" }, ...SETS.map(s => ({ id: "set-" + s.id, short: s.name })), ...BOOKS];
     $f("chips").innerHTML = opts.map(o => `<button class="chip" data-id="${o.id}" aria-pressed="${o.id === filter}">${e(o.short)}</button>`).join("");
     $f("chips").querySelectorAll(".chip").forEach(c => c.onclick = () => {
       filter = c.dataset.id; pos = 0;
@@ -738,13 +742,14 @@ const BOOKS = /*@BOOKS*/[];
     }
     pos = Math.min(pos, L.length - 1);
     const c = L[pos], id = (rev ? "r:" : "") + c.key, open = opened.has(id);
-    const left = c.wrong ? `Commonly wrong · ${e(c.cat)} · ${e(c.source)}` : c.myth ? `Myth vs evidence · ${e(c.myth.source)}` : `${e(c.book.title)} · ${e(c.book.author)} · ${c.book.year}`;
+    const left = c.set ? `${e(c.set.name)}${c.cat ? " · " + e(c.cat) : ""}${c.source ? " · " + e(c.source) : ""}` : c.myth ? `Myth vs evidence · ${e(c.myth.source)}` : `${e(c.book.title)} · ${e(c.book.author)} · ${c.book.year}`;
     const str = c.myth ? `<span class="str str-${c.myth.strength.toLowerCase()}">${e(c.myth.strength)} evidence</span> · ` : "";
     const right = rev ? dueLabel(c.key) : `${CLIPS[c.key] ? '<span class="badge">Clip</span> · ' : ""}${c.n} of ${c.of}`;
     let html = `<div class="src"><span>${left}</span><span>${str}${right}</span></div><h3>${e(c.t)}</h3>`;
     if (!open) {
       const prompt = rev ? "From memory: explain this idea in your own words, out loud or below. Then check yourself."
-        : c.myth || c.wrong ? "Before you read: what do most people believe here, and is it true? Guess first, even if you're unsure."
+        : c.set ? (c.set.prompt || "Before you read: answer the question from what you know. A wrong guess still helps it stick.")
+        : c.myth ? "Before you read: what do most people believe here, and is it true? Guess first, even if you're unsure."
         : "Before you read: predict the idea behind this title in one line. A wrong guess still helps it stick.";
       html += `<p class="prompt">${prompt}</p>
         <label class="sr-only" for="guess">Your answer</label>
@@ -807,7 +812,7 @@ const BOOKS = /*@BOOKS*/[];
   const topics = () => [
     { id: "mixed", label: "Mixed: all books and myths" },
     { id: "myths", label: "Myths vs evidence" },
-    { id: "wrong", label: "Things people get wrong" },
+    ...SETS.map(s => ({ id: "set-" + s.id, label: s.name })),
     ...BOOKS.map(b => ({ id: b.id, label: b.title })),
     { id: "review", label: "My review queue" }
   ];
@@ -818,26 +823,60 @@ const BOOKS = /*@BOOKS*/[];
     const C = window.clickCards;
     if (id === "mixed") return shuffle(C.all).slice(0, 12);
     if (id === "myths") return C.myths;
-    if (id === "wrong") return C.wrongCards;
+    if (id.startsWith("set-")) return shuffle(C.setCards.filter(c => "set-" + c.set.id === id)).slice(0, 30);
     if (id === "review") return C.reviewKeys().map(k => C.byKey[k]).filter(Boolean).slice(0, 15);
     return C.bookCards.filter(c => c.book.id === id);
   }
-  const material = cards => cards.map(c => `[${c.key}] ${c.t} (${c.book ? c.book.title + " by " + c.book.author : c.wrong ? "Commonly wrong, " + c.cat + "; source: " + c.source : "Myth vs evidence, " + c.myth.strength + " evidence"}): ${c.b}${c.flag ? " Note: " + c.flag : ""}`).join("\n");
+  const material = cards => cards.map(c => `[${c.key}] ${c.t} (${c.book ? c.book.title + " by " + c.book.author : c.set ? c.set.name + (c.cat ? ", " + c.cat : "") + (c.source ? "; source: " + c.source : "") : "Myth vs evidence, " + c.myth.strength + " evidence"}): ${c.b}${c.flag ? " Note: " + c.flag : ""}`).join("\n");
 
   function status(msg, stop) {
     $i("ivStatus").innerHTML = e(msg) + (stop ? ` <button class="btn btn-ghost" id="ivStop">Stop</button>` : "");
     if (stop) $i("ivStop").onclick = () => ctl?.abort();
   }
   function mode() {
-    $i("ivMode").textContent = sample
-      ? "AI feedback runs on your own Claude account. Your first interview asks your permission."
+    $i("ivMode").textContent = sample && sample.local
+      ? `AI feedback runs on ${sample.local.model} through your local Click server.`
+      : sample ? "AI feedback runs on your own Claude account. Your first interview asks your permission."
       : "AI feedback isn't available in this view, so interviews run offline: you'll compare your answers with the source cards.";
   }
   mode();
-  if (window.claude && window.claude.use) window.claude.use("sample").then(s => { sample = s; mode(); }).catch(() => {});
+  if (window.claude && window.claude.use) window.claude.use("sample").then(s => { if (s) { sample = s; mode(); } }).catch(() => {});
+  if (["localhost", "127.0.0.1"].includes(location.hostname))
+    fetch("/api/health").then(r => r.ok ? r.json() : null).then(info => { if (info && info.ok && !sample) { sample = makeLocal(info); mode(); } }).catch(() => {});
+
+  function parseLoose(text) {
+    const t = String(text).trim();
+    try { return JSON.parse(t); } catch (err) {}
+    const fence = t.match(/```(?:json)?\s*([\s\S]*?)```/i);
+    if (fence) try { return JSON.parse(fence[1]); } catch (err) {}
+    const a = [t.indexOf("["), t.indexOf("{")].filter(i => i >= 0), z = Math.max(t.lastIndexOf("]"), t.lastIndexOf("}"));
+    if (a.length && z > 0) try { return JSON.parse(t.slice(Math.min(...a), z + 1)); } catch (err) {}
+    return undefined;
+  }
+  function makeLocal(info) {
+    const call = async (input, opts = {}) => {
+      const prompt = typeof input === "string" ? input : input.map(m => m.content).join("\n\n");
+      let r;
+      try { r = await fetch("/api/llm", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ prompt }), signal: opts.signal }); }
+      catch (err) { throw { code: err && err.name === "AbortError" ? "cancelled" : "local_error", message: String(err) }; }
+      const data = await r.json().catch(() => ({}));
+      if (!r.ok) throw { code: data.code || "local_error", message: data.error || "HTTP " + r.status };
+      return { text: String(data.text || ""), truncated: false };
+    };
+    const f = (input, opts) => call(input, opts);
+    f.json = async (input, opts) => {
+      const { text } = await call(input + "\n\nReply with only the JSON value and no other text.", opts);
+      const v = parseLoose(text);
+      if (v === undefined) throw { code: "invalid_json", text };
+      return v;
+    };
+    f.local = info;
+    return f;
+  }
 
   const hideFor = code => ["not_granted", "sampling_disabled", "not_declared", "capability_disabled", "capability_removed"].includes(code);
   function errCopy(code) {
+    if (code === "local_error") return "Your local Click server couldn't get an answer from the model. Check the server window for the error.";
     if (code === "rate_limited") return "Claude is busy or you've hit a usage limit. Try again in a bit.";
     if (code === "session_expired") return "Sign in to Claude again, then retry.";
     if (code === "invalid_json" || code === "empty_completion") return "The reply came back in a shape Click couldn't read. Try again.";
