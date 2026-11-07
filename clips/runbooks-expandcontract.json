@@ -1,0 +1,86 @@
+{
+  "id": "runbooks-expandcontract",
+  "title": "Expand, migrate, contract",
+  "beats": [
+    {
+      "primitive": "title",
+      "dur": 6,
+      "say": "You need to rename a database column during a deploy. How do you avoid trapping yourself?",
+      "data": {
+        "kicker": "Deployment runbooks",
+        "lines": [
+          "Change the schema",
+          "without a trap door"
+        ]
+      }
+    },
+    {
+      "primitive": "split",
+      "dur": 12,
+      "say": "Doing it in one step means the old code can't read the new schema. If you roll back, the app breaks anyway.",
+      "data": {
+        "title": "One big step vs three small ones",
+        "left": {
+          "label": "One step",
+          "rows": [
+            "Rename in place",
+            "Old code breaks",
+            "Rollback doesn't help"
+          ],
+          "tone": "dim"
+        },
+        "right": {
+          "label": "Expand and contract",
+          "rows": [
+            "Add new beside old",
+            "Code reads both",
+            "Remove old last"
+          ],
+          "tone": "rev"
+        }
+      }
+    },
+    {
+      "primitive": "flow",
+      "dur": 14,
+      "say": "First expand: add the new column next to the old one. Then migrate: ship code that works with both and copy the data across. Only when that's stable, contract: drop the old column.",
+      "data": {
+        "steps": [
+          {
+            "t": "Expand",
+            "s": "Add new column, keep old"
+          },
+          {
+            "t": "Migrate",
+            "s": "Code uses both, move data"
+          },
+          {
+            "t": "Contract",
+            "s": "Drop old once stable"
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "title",
+      "dur": 7,
+      "say": "Each step can be undone on its own, so you're never one deploy away from code that can't read its own data.",
+      "data": {
+        "kicker": "The payoff",
+        "lines": [
+          "Every step",
+          "can roll back"
+        ]
+      }
+    },
+    {
+      "primitive": "recall",
+      "dur": 7,
+      "say": "What are the three steps for a safe schema change, and why that order?",
+      "data": {
+        "question": "What are the three steps for a safe schema change, and why that order?",
+        "answer": "Expand, migrate, contract. Removing the old structure last means every earlier step can still be rolled back."
+      }
+    }
+  ]
+}
