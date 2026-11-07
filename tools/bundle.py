@@ -56,7 +56,7 @@ if __name__ == "__main__":
 
 def main():
     files = subprocess.run(["git", "ls-files"], cwd=ROOT, capture_output=True, text=True, check=True).stdout.split()
-    files = [f for f in files if not f.startswith("dist/") and f != "tools/bundle.py"]
+    files = [f for f in files if not f.startswith("dist/") and f not in ("tools/bundle.py", "click-bundle.txt")]
     parts = []
     for f in sorted(files):
         text = (ROOT / f).read_text(encoding="utf-8")

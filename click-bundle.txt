@@ -1931,6 +1931,95 @@ if __name__ == "__main__":
 }
 
 
+===== FILE: clips/runbooks-expandcontract.json =====
+{
+  "id": "runbooks-expandcontract",
+  "title": "Expand, migrate, contract",
+  "beats": [
+    {
+      "primitive": "title",
+      "dur": 6,
+      "say": "You need to rename a database column during a deploy. How do you avoid trapping yourself?",
+      "data": {
+        "kicker": "Deployment runbooks",
+        "lines": [
+          "Change the schema",
+          "without a trap door"
+        ]
+      }
+    },
+    {
+      "primitive": "split",
+      "dur": 12,
+      "say": "Doing it in one step means the old code can't read the new schema. If you roll back, the app breaks anyway.",
+      "data": {
+        "title": "One big step vs three small ones",
+        "left": {
+          "label": "One step",
+          "rows": [
+            "Rename in place",
+            "Old code breaks",
+            "Rollback doesn't help"
+          ],
+          "tone": "dim"
+        },
+        "right": {
+          "label": "Expand and contract",
+          "rows": [
+            "Add new beside old",
+            "Code reads both",
+            "Remove old last"
+          ],
+          "tone": "rev"
+        }
+      }
+    },
+    {
+      "primitive": "flow",
+      "dur": 14,
+      "say": "First expand: add the new column next to the old one. Then migrate: ship code that works with both and copy the data across. Only when that's stable, contract: drop the old column.",
+      "data": {
+        "steps": [
+          {
+            "t": "Expand",
+            "s": "Add new column, keep old"
+          },
+          {
+            "t": "Migrate",
+            "s": "Code uses both, move data"
+          },
+          {
+            "t": "Contract",
+            "s": "Drop old once stable"
+          }
+        ]
+      }
+    },
+    {
+      "primitive": "title",
+      "dur": 7,
+      "say": "Each step can be undone on its own, so you're never one deploy away from code that can't read its own data.",
+      "data": {
+        "kicker": "The payoff",
+        "lines": [
+          "Every step",
+          "can roll back"
+        ]
+      }
+    },
+    {
+      "primitive": "recall",
+      "dur": 7,
+      "say": "What are the three steps for a safe schema change, and why that order?",
+      "data": {
+        "question": "What are the three steps for a safe schema change, and why that order?",
+        "answer": "Expand, migrate, contract. Removing the old structure last means every earlier step can still be rolled back."
+      }
+    }
+  ]
+}
+
+
 ===== FILE: clips/spaced-repetition-101.json =====
 {
   "id": "spaced-repetition-101",
@@ -3417,6 +3506,147 @@ if __name__ == "__main__":
     ]
   }
 ]
+
+
+===== FILE: content/sets/runbooks.json =====
+{
+  "id": "runbooks",
+  "name": "Deployment runbooks",
+  "prompt": "Before you read: if you had to hand this deploy to a tired teammate at 3 a.m., what would they need written down? Guess first.",
+  "cards": [
+    {
+      "id": "why",
+      "cat": "Foundations",
+      "source": "Google, Site Reliability Engineering (2016), Introduction",
+      "flag": "This figure is Google's internal experience, not a controlled study.",
+      "t": "Why write a runbook at all?",
+      "b": "A runbook moves the thinking to a calm moment so the doing can happen under stress. Google's SRE book reports that writing best practices down ahead of time cut mean time to repair about threefold compared with improvising. The reader you are writing for is tired, interrupted, and not the person who built the system.",
+      "y": "Pick one deploy you do by memory and list the steps you'd forget if you were half asleep."
+    },
+    {
+      "id": "anatomy",
+      "cat": "Foundations",
+      "source": "Google SRE Workbook (2018); AWS Well-Architected, Operational Excellence pillar",
+      "t": "What sections does a good deployment runbook have?",
+      "b": "Purpose and scope, owner, preconditions and approvals, the steps, how to verify success, the rollback plan, who to tell, and who to escalate to. If any section is missing, someone fills it in by guessing during the deploy. Version and date the runbook so readers know whether it's current.",
+      "y": "Check one existing runbook against these eight sections and mark what's missing."
+    },
+    {
+      "id": "expected",
+      "cat": "Writing steps",
+      "source": "Google SRE Workbook (2018), on-call and playbook guidance",
+      "t": "What should every runbook step include besides the command?",
+      "b": "The expected result, and what to do if you don't get it. 'Run the migration' is a hope. 'Run the migration; expect 14 tables altered in under 2 minutes; if it errors, stop and go to Rollback A' is a step. Exact commands beat descriptions, because copy-paste doesn't misremember flags.",
+      "y": "Rewrite one vague step as: command, expected output, and the branch if it fails."
+    },
+    {
+      "id": "idempotent",
+      "cat": "Writing steps",
+      "source": "Common practice; Google SRE Workbook (2018)",
+      "t": "Why should runbook steps be safe to run twice?",
+      "b": "Deploys get interrupted: a session drops, someone loses their place, a step half-finishes. If rerunning a step is harmless (it checks before it creates or changes something), recovery is just 'run it again.' If it isn't, the runbook needs to say so in bold and explain how to check whether it already ran.",
+      "y": "Find one step in your process that would break if run twice, and add a check before it."
+    },
+    {
+      "id": "gonogo",
+      "cat": "Before",
+      "source": "Common change-management practice; AWS Well-Architected, Operational Excellence",
+      "t": "What belongs in a go/no-go check?",
+      "b": "Facts you can verify in a minute: the build artifact and version match what was tested, approvals are in, the rollback has been checked, dashboards are open, the right people are reachable, and nothing else risky is changing at the same time. Any 'no' means you stop, not that you note it and proceed.",
+      "y": "Write a five-item go/no-go list for your next deploy and actually read it out before starting."
+    },
+    {
+      "id": "rollback",
+      "cat": "Rollback",
+      "source": "Google SRE Workbook (2018), Canarying Releases; SRE book ch. 14, Managing Incidents",
+      "t": "When should you decide your rollback trigger?",
+      "b": "Before the deploy, while you're calm. Write the criteria down, like 'error rate above X for 5 minutes' or 'any data-integrity alarm.' Mid-incident, people overestimate how close they are to a fix. A pre-agreed trigger turns rollback into following the plan instead of admitting defeat. Restore service first, debug afterward.",
+      "y": "For your next change, write one sentence: 'We roll back if ___.'"
+    },
+    {
+      "id": "tested",
+      "cat": "Rollback",
+      "source": "Google SRE Workbook (2018); common practice",
+      "t": "Is a rollback plan you've never run actually a plan?",
+      "b": "Not really. Untested rollbacks fail in predictable ways: the old version can't read data the new one wrote, a config was changed by hand, or the previous artifact was deleted. Practice the rollback in staging, and keep the last known-good build available until the new one has proven itself.",
+      "y": "Do one practice rollback in a non-production environment and time it."
+    },
+    {
+      "id": "expandcontract",
+      "cat": "Rollback",
+      "source": "Danilo Sato, 'ParallelChange,' martinfowler.com (2014)",
+      "t": "How do you change a database schema without trapping yourself?",
+      "b": "Expand, migrate, then contract. First add the new column or table while keeping the old one. Then ship code that works with both and move the data over. Only after that's stable, remove the old structure. Each step can be rolled back on its own, so you're never one deploy away from code that can't read its own data.",
+      "y": "Sketch the three steps for a schema change you might make next."
+    },
+    {
+      "id": "canary",
+      "cat": "During",
+      "source": "Google SRE Workbook (2018), ch. 16, Canarying Releases",
+      "t": "Why roll out to a small slice first?",
+      "b": "A canary sends the new version to a small share of traffic or hosts and compares it with the rest. If it's worse, only that slice is hurt and rollback is quick. The comparison has to be decided in advance (which metrics, how big a difference, how long to wait) or the canary becomes a vibe check.",
+      "y": "Name the one or two metrics you'd compare in a canary for your service."
+    },
+    {
+      "id": "flags",
+      "cat": "During",
+      "source": "Pete Hodgson, 'Feature Toggles,' martinfowler.com (2017)",
+      "t": "What's the difference between deploying and releasing?",
+      "b": "Deploying puts code on servers. Releasing turns behavior on for users. Feature flags separate the two, so new code can ship dark and be switched on later, and switched off in seconds without a redeploy. The cost is complexity: old flags pile up and need cleaning out.",
+      "y": "Identify one risky change that could ship behind a flag instead of all at once."
+    },
+    {
+      "id": "verify",
+      "cat": "After",
+      "source": "Google, Site Reliability Engineering (2016), ch. 6, Monitoring Distributed Systems",
+      "t": "How do you know the deploy actually worked?",
+      "b": "Check user-facing signals, not just that the process started. Google's four golden signals are a good default: latency, traffic, errors, and saturation (how full the system is). Compare against a baseline from before the deploy, and keep watching for a set period, since some failures only show up under load.",
+      "y": "Write down the before-deploy baseline for one golden signal next time you ship."
+    },
+    {
+      "id": "driver",
+      "cat": "People",
+      "source": "Google, Site Reliability Engineering (2016), ch. 14, Managing Incidents",
+      "t": "Why should one person drive the deploy?",
+      "b": "When several people type commands at once, steps get skipped or doubled. Name one driver who runs the runbook and one person who communicates: announces the start, posts progress, and calls the end. Others watch and advise. The same split is how incident command keeps a crisis from turning into a crowd.",
+      "y": "On your next team deploy, name the driver and the communicator out loud before step one."
+    },
+    {
+      "id": "smallbatches",
+      "cat": "Evidence",
+      "source": "Forsgren, Humble & Kim, Accelerate (2018); DORA State of DevOps reports",
+      "flag": "Based on surveys. It shows correlation, not proof that small batches cause the gains.",
+      "t": "Do frequent deploys make software less stable?",
+      "b": "The DORA research says the opposite tends to hold. Teams that deploy more often, in smaller changes, also report lower change failure rates and faster recovery. Small changes are easier to test, easier to understand, and easier to undo. Speed and stability tend to rise together.",
+      "y": "Look at your last risky deploy: could it have been split into two smaller ones?"
+    },
+    {
+      "id": "checklists",
+      "cat": "Evidence",
+      "source": "Haynes et al., NEJM (2009); Urbach et al., NEJM (2014)",
+      "flag": "Evidence is from surgery, not software, and a later Ontario study found no significant effect. Treat it as a strong analogy, not proof.",
+      "t": "Do checklists really help experts?",
+      "b": "In a 2009 WHO study across eight hospitals, a surgical safety checklist was followed by a drop in deaths from about 1.5 to 0.8 percent. A later province-wide study didn't replicate the gain, likely because adoption was shallower. The pattern points to the same lesson for runbooks: they help when people actually use them, not when they're filed and skipped.",
+      "y": "Notice which runbook steps your team skips, and ask whether the step or the habit is wrong."
+    },
+    {
+      "id": "living",
+      "cat": "Upkeep",
+      "source": "Google SRE Workbook (2018); AWS Well-Architected, Operational Excellence",
+      "t": "How does a runbook stay trustworthy?",
+      "b": "Update it every time it's used, while the gaps are fresh. Run it as a dry run or game day before you need it for real. A stale runbook can be worse than none, because people follow it confidently into a wall. If a step is never needed, delete it.",
+      "y": "After your next deploy, spend five minutes fixing whatever in the runbook was wrong."
+    },
+    {
+      "id": "automate",
+      "cat": "Upkeep",
+      "source": "Google, Site Reliability Engineering (2016), ch. 5, Eliminating Toil",
+      "t": "Should runbooks be scripts instead of documents?",
+      "b": "Over time, mostly yes. Repetitive manual steps are what Google calls toil, and the steps that never need judgment are good candidates for scripts. Keep the document for the decisions: when to go, when to stop, when to roll back, who to call. A good runbook gets shorter as automation absorbs the mechanical parts.",
+      "y": "Pick the most boring step in one runbook and script it."
+    }
+  ]
+}
 
 
 ===== FILE: content/sets/wrong.json =====
